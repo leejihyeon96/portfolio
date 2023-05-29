@@ -14,7 +14,7 @@ html{
 p{padding: 0px;}
 
 .main-box{
-    background: url(/jpg/PORTFOLIO\ 첫장.jpg) no-repeat center;
+    background: url(jpg/PORTFOLIO\ 첫장.jpg) no-repeat center;
     background-size: cover;
     position: relative;
     left: 0; right: 0;
@@ -28,7 +28,7 @@ p{padding: 0px;}
 }
 
 .btn-box{
-    background: url(/jpg/Component\ 3.png)no-repeat;
+    background: url(jpg/Component\ 3.png)no-repeat;
     position: fixed;
     top: 60%;
     right: 6%;
@@ -39,7 +39,7 @@ p{padding: 0px;}
     cursor: pointer;
 }
 .btn-box:active{
-    background: url(/jpg/Property\ 1=Component\ 2.png)no-repeat;
+    background: url(jpg/Property\ 1=Component\ 2.png)no-repeat;
     transform: translateY(10px);
     background-size: 80%;
 }
