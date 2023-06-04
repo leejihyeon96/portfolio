@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="after"></div>
+<div class="main-box">
+    <img class="line" src="jpg/선.png" alt="">
+    <div class="ani-box"></div>
+    <div class="btn-box"> </div>
+        <div class="o"></div>
+        <div class="o2"></div>
+        <div class="o3"></div>
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script>
+        $('.btn-box').on('click', function(){
+            $('.after').css('opacity','1').css('z-index','1')
+        })
+        
+        $('.btn-box').on('click',function(){
+        setTimeout(function(){ window.location.href="페이지2/index.html" },3000)
+        })
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
