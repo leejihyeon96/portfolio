@@ -1050,7 +1050,7 @@ p{padding: 0px;}
 .logo1{
     position: absolute;
     top: 22%; left: 60%;
-    background: url(/jpg/포토샵\ 로고.png)no-repeat center;
+    background: url(../jpg/포토샵\ 로고.png)no-repeat center;
     background-size: 200px;
     width: 50px; height: 50px;
 }
@@ -1065,7 +1065,7 @@ p{padding: 0px;}
 }
 .logo2{
     position: absolute;
-    background: url(/jpg/어도비\ 일러스트.png)no-repeat center;
+    background: url(../jpg/어도비\ 일러스트.png)no-repeat center;
     background-size: 200px;
     top: 26.5%; left: 59.8%;
     width: 50px; height: 50px;
@@ -1081,7 +1081,7 @@ p{padding: 0px;}
 }
 .logo3{
     position: absolute;
-    background: url(/jpg/pngwing.com.png)no-repeat center;
+    background: url(../jpg/pngwing.com.png)no-repeat center;
     background-size: 120px;
     top: 30.5%; left: 55.5%;
     width: 200px; height: 50px;
@@ -1096,7 +1096,7 @@ p{padding: 0px;}
 }
 .logo4{
     position: absolute;
-    background: url(/jpg/3d\ max\ logo.png)no-repeat center;
+    background: url(../jpg/3d\ max\ logo.png)no-repeat center;
     background-size: 75px;
     top: 34.5%; left: 60%;
     width: 50px; height: 50px;
@@ -1221,7 +1221,7 @@ p{padding: 0px;}
 
 .poster-photoshop-logo{
     position: absolute;
-    background: url(/jpg/포토샵\ 로고.png)no-repeat center;
+    background: url(../jpg/포토샵\ 로고.png)no-repeat center;
     background-size: cover;
     left: 3%;
     width: 200px; height: 200px;
@@ -1230,7 +1230,7 @@ p{padding: 0px;}
 }
 .poster-illustrator-logo{
     position: absolute;
-    background: url(/jpg/어도비\ 일러스트.png)no-repeat center;
+    background: url(../jpg/어도비\ 일러스트.png)no-repeat center;
     background-size: cover;
     left: 8%; top: 4.8%;
     width: 200px; height: 200px;
@@ -1253,7 +1253,7 @@ p{padding: 0px;}
     position: absolute;
     width: 400px; height: 600px;
     margin-top: 300px; margin-left: 100px;
-    background: url(/jpg/오렌지쥬스\ 광고\ 포스터.jpg) center no-repeat;
+    background: url(../jpg/오렌지쥬스\ 광고\ 포스터.jpg) center no-repeat;
     background-size: 400px;
     -webkit-box-reflect: below -70px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.4));
 }
@@ -1269,7 +1269,7 @@ p{padding: 0px;}
     position: absolute;
     width: 400px; height: 600px;
     margin-top: 300px; margin-left: 750px;
-    background: url(/jpg/선크림\ 포스터.jpg) center no-repeat;
+    background: url(../jpg/선크림\ 포스터.jpg) center no-repeat;
     background-size: 400px;
     -webkit-box-reflect: below -30px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.4));
 }
@@ -1302,7 +1302,7 @@ p{padding: 0px;}
     position: absolute;
     width: 400px; height: 600px;
     margin-top: 1200px; margin-left: 100px;
-    background: url(/jpg/반지\ 포스터.jpg) center no-repeat;
+    background: url(../jpg/반지\ 포스터.jpg) center no-repeat;
     background-size: 400px;
     -webkit-box-reflect: below -70px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.4));
 }
@@ -1318,7 +1318,7 @@ p{padding: 0px;}
     position: absolute;
     width: 400px; height: 600px;
     margin-top: 1200px; margin-left: 750px;
-    background: url(/jpg/팥빙수\ 포스터.jpg) center no-repeat;
+    background: url(../jpg/팥빙수\ 포스터.jpg) center no-repeat;
     background-size: 400px;
     -webkit-box-reflect: below -30px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.4));
 }
@@ -1334,7 +1334,7 @@ p{padding: 0px;}
     position: absolute;
     width: 400px; height: 600px;
     margin-top: 1200px; margin-left: 1400px;
-    background: url(/jpg/햄버거\ 포스터.jpg) center no-repeat;
+    background: url(../jpg/햄버거\ 포스터.jpg) center no-repeat;
     background-size: 400px;
     -webkit-box-reflect: below -30px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.4));
 }
@@ -1355,7 +1355,7 @@ p{padding: 0px;}
 }
 .character-logo1{
     position: absolute;
-    background: url(/jpg/어도비\ 일러스트.png)no-repeat center;
+    background: url(../jpg/어도비\ 일러스트.png)no-repeat center;
     background-size: cover;
     width: 200px; height: 200px;
     left: 550px; top: 10.5%;
@@ -1363,7 +1363,7 @@ p{padding: 0px;}
 }
 .character-logo2{
     position: absolute;
-    background: url(/jpg/포토샵\ 로고.png)no-repeat center;
+    background: url(../jpg/포토샵\ 로고.png)no-repeat center;
     background-size: cover;
     width: 200px; height: 200px;
     left: 600px; top: 15%;
@@ -1384,7 +1384,7 @@ p{padding: 0px;}
 }
 .character-img{
     position: absolute;
-    background: url(/jpg/캐릭터.png)no-repeat center;
+    background: url(../jpg/캐릭터.png)no-repeat center;
     background-size: cover;
     width: 500px; height: 400px;
     left: 1100px; top: 10%;
@@ -1399,7 +1399,7 @@ p{padding: 0px;}
 }
 .character-img2{
     position: absolute;
-    background: url(/jpg/캐릭터\ 목업1.jpg)no-repeat center;
+    background: url(../jpg/캐릭터\ 목업1.jpg)no-repeat center;
     background-size: cover;
     width: 700px; height: 700px;
     left: 150px; top: 40%;
@@ -1407,7 +1407,7 @@ p{padding: 0px;}
 }
 .character-img3{
     position: absolute;
-    background: url(/jpg/캐릭터\ 목업2.jpg)no-repeat center;
+    background: url(../jpg/캐릭터\ 목업2.jpg)no-repeat center;
     background-size: cover;
     width: 700px; height: 700px;
     left: 1000px; top: 40%;
@@ -1423,13 +1423,13 @@ p{padding: 0px;}
 
 .pamphlet1{
     left: 0; right: 0; margin: auto;
-    background: url(/jpg/불꽃축제\ 팜플렛\ 목업-2.jpg)no-repeat center;
+    background: url(../jpg/불꽃축제\ 팜플렛\ 목업-2.jpg)no-repeat center;
     background-size: cover;
     width: 100%;  height: 1000px;
 }
 .pamphlet2{
     left: 0; right: 0; margin: auto;
-    background: url(/jpg/불꽃축제\ 팜플렛\ 목업-1.jpg)no-repeat center;
+    background: url(../jpg/불꽃축제\ 팜플렛\ 목업-1.jpg)no-repeat center;
     background-size: cover;
     width: 100%; height: 1000px;
 }
@@ -1448,7 +1448,7 @@ p{padding: 0px;}
 }
 .link-ui{
     position: absolute;
-    background: url(/jpg/피그마\ 로고.png)no-repeat center;
+    background: url(../jpg/피그마\ 로고.png)no-repeat center;
     background-size: 310px;
     width: 90px; height: 100px;
     -webkit-box-reflect: below -40px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.5), rgba(0,0,0,0.7));
@@ -1487,7 +1487,7 @@ p{padding: 0px;}
 /* 피그마 로고 */
 .figma-logo{
     position: absolute;
-    background: url(/jpg/피그마\ 로고.png)no-repeat center;
+    background: url(../jpg/피그마\ 로고.png)no-repeat center;
     background-size: 250px;
     top: 7%; left: 5%;
     width: 150px; height: 150px;
@@ -1495,7 +1495,7 @@ p{padding: 0px;}
 }
 .figma-logo2{
     position: absolute;
-    background: url(/jpg/피그마\ 로고.png)no-repeat center;
+    background: url(../jpg/피그마\ 로고.png)no-repeat center;
     background-size: 250px;
     top: 61.5%; left: 1050px;
     width: 150px; height: 150px;
@@ -1505,7 +1505,7 @@ p{padding: 0px;}
 .illustrator-logo{
     position: absolute;
     left: 12%; top: 6.5%;
-    background: url(/jpg/어도비\ 일러스트.png)no-repeat center;
+    background: url(../jpg/어도비\ 일러스트.png)no-repeat center;
     background-size: cover;
     width: 200px; height: 200px;
     -webkit-box-reflect: below -155px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0.4));
@@ -1513,7 +1513,7 @@ p{padding: 0px;}
 .photoshop-logo2{
     position: absolute;
     left: 1200px; top: 61.05%;
-    background: url(/jpg/포토샵\ 로고.png)no-repeat center;
+    background: url(../jpg/포토샵\ 로고.png)no-repeat center;
     background-size: cover;
     width: 200px; height: 200px;
     -webkit-box-reflect: below -155px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0.4));
@@ -1522,21 +1522,21 @@ p{padding: 0px;}
 .Ui-img1{
     position: absolute;
     left: 6%; top: 14.5%;
-    background: url(/jpg/iPhone\ 14\ Pro\ -\ 1.jpg)no-repeat center;
+    background: url(../jpg/iPhone\ 14\ Pro\ -\ 1.jpg)no-repeat center;
     background-size: 300px;
     width: 300px; height: 650px;
 }
 .Ui-img2{
     position: absolute;
     left: 34%; top: 6.5%;
-    background: url(/jpg/음악플레이어UI목업2.jpg)no-repeat center;
+    background: url(../jpg/음악플레이어UI목업2.jpg)no-repeat center;
     background-size: 1000px;
     width: 1000px; height: 1100px;
 }
 .Ui-img3{
     position: absolute;
     left: 6%; top: 30%;
-    background: url(/jpg/음악플레이어UI목업.jpg)no-repeat center;
+    background: url(../jpg/음악플레이어UI목업.jpg)no-repeat center;
     background-size: 1000px;
     width: 1000px; height: 1000px;
 }
@@ -1555,7 +1555,7 @@ p{padding: 0px;}
 .Ui-img4{
     position: absolute;
     left: 58%; top: 32%;
-    background: url(/jpg/iPhone\ 14\ Pro\ -\ 2.jpg)no-repeat center;
+    background: url(../jpg/iPhone\ 14\ Pro\ -\ 2.jpg)no-repeat center;
     background-size: cover;
     width: 300px; height: 1200px;
     box-shadow: rgba(0, 0, 0,0.9) 0 0 10px;
@@ -1563,7 +1563,7 @@ p{padding: 0px;}
 .Ui-img5{
     position: absolute;
     left: 77%; top: 32%;
-    background: url(/jpg/iPhone\ 14\ Pro\ -\ 3.jpg)no-repeat center;
+    background: url(../jpg/iPhone\ 14\ Pro\ -\ 3.jpg)no-repeat center;
     background-size: cover;
     width: 300px; height: 1200px;
     box-shadow: rgba(0, 0, 0,0.9) 0 0 10px;
@@ -1571,7 +1571,7 @@ p{padding: 0px;}
 .Ui-img6{
     position: absolute;
     left: 5%; top: 64%;
-    background: url(/jpg/iPhone\ 14\ 1.jpg)no-repeat center;
+    background: url(../jpg/iPhone\ 14\ 1.jpg)no-repeat center;
     background-size: 300px;
     width: 300px; height: 650px;
     box-shadow: rgba(0, 0, 0,0.9) 0 0 10px;
@@ -1587,7 +1587,7 @@ p{padding: 0px;}
 .Ui-img7{
     position: absolute;
     left: 15%; top: 66%;
-    background: url(/jpg/iPhone\ 14\ 2.jpg)no-repeat center;
+    background: url(../jpg/iPhone\ 14\ 2.jpg)no-repeat center;
     background-size: cover;
     width: 300px; height: 650px;
     box-shadow: rgba(0, 0, 0,0.9) 0 0 10px;
@@ -1601,7 +1601,7 @@ p{padding: 0px;}
 .Ui-img8{
     position: absolute;
     left: 25%; top: 68%;
-    background: url(/jpg/iPhone\ 14\ 3.jpg)no-repeat center;
+    background: url(../jpg/iPhone\ 14\ 3.jpg)no-repeat center;
     background-size: cover;
     width: 300px; height: 650px;
     box-shadow: rgba(0, 0, 0,0.9) 0 0 10px;
@@ -1615,7 +1615,7 @@ p{padding: 0px;}
 .Ui-img9{
     position: absolute;
     left: 45%; top: 70%;
-    background: url(/jpg/어플ui\ 목업.jpg)no-repeat center;
+    background: url(../jpg/어플ui\ 목업.jpg)no-repeat center;
     background-size: cover;
     width: 800px; height: 800px;
     box-shadow: rgba(0, 0, 0,0.9) 0 0 10px;
@@ -1652,7 +1652,7 @@ p{padding: 0px;}
 }
 .photoshop-logo{
     position: absolute;
-    background: url(/jpg/포토샵\ 로고.png)no-repeat center;
+    background: url(../jpg/포토샵\ 로고.png)no-repeat center;
     background-size: cover;
     width: 200px; height: 200px;
     bottom: 65%; left: 25%;
@@ -1663,7 +1663,7 @@ p{padding: 0px;}
     position: absolute;
     left: 5%; top: 10%;
     width: 600px; height: 500px;
-    background:no-repeat center url(/jpg/2021-05-10\ 아이언맨\(모작\)\(완\).jpg);
+    background:no-repeat center url(../jpg/2021-05-10\ 아이언맨\(모작\)\(완\).jpg);
     background-size: 600px;
     -webkit-box-reflect: below -120px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.4));
 }
@@ -1671,7 +1671,7 @@ p{padding: 0px;}
     position: absolute;
     left: 50%; top: 20%;
     width: 700px; height: 500px;
-    background:no-repeat center url(/jpg/2021-11-13타노스.jpg);
+    background:no-repeat center url(../jpg/2021-11-13타노스.jpg);
     background-size: 700px;
     -webkit-box-reflect: below -100px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.4));
 }
@@ -1679,7 +1679,7 @@ p{padding: 0px;}
     position: absolute;
     left: 5%; top: 30%;
     width: 700px; height: 550px;
-    background:no-repeat center url(/jpg/2021-09-30아이유\(2\).jpg);
+    background:no-repeat center url(../jpg/2021-09-30아이유\(2\).jpg);
     background-size: 450px;
     -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.4));
 }
@@ -1687,7 +1687,7 @@ p{padding: 0px;}
     position: absolute;
     left: 50%; top: 40%;
     width: 600px; height: 700px;
-    background:no-repeat center url(/jpg/2022-06-13~트랜스포머\(4\).jpg);
+    background:no-repeat center url(../jpg/2022-06-13~트랜스포머\(4\).jpg);
     background-size: 500px;
     -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.4));
 }
@@ -1695,7 +1695,7 @@ p{padding: 0px;}
     position: absolute;
     left: 5%; top: 52%;
     width: 600px; height: 340px;
-    background:no-repeat center url(/jpg/깐부.jpg);
+    background:no-repeat center url(../jpg/깐부.jpg);
     background-size: 600px;
     -webkit-box-reflect: below 5px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.4));
 }
@@ -1703,7 +1703,7 @@ p{padding: 0px;}
     position: absolute;
     left: 10%; top: 67%;
     width: 510px; height: 630px;
-    background:no-repeat center url(/jpg/에일리언\(4\).jpg);
+    background:no-repeat center url(../jpg/에일리언\(4\).jpg);
     background-size: 500px;
     -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.4));
 }
@@ -1711,7 +1711,7 @@ p{padding: 0px;}
     position: absolute;
     left: 52%; top: 62%;
     width: 510px; height: 630px;
-    background:no-repeat center url(/jpg/츄2\(4\).jpg);
+    background:no-repeat center url(../jpg/츄2\(4\).jpg);
     background-size: 450px;
     -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.4));
 }
@@ -1719,7 +1719,7 @@ p{padding: 0px;}
     position: absolute;
     left: 45%; top: 80%;
     width: 410px; height: 430px;
-    background:no-repeat center url(/jpg/3D\ 캐릭터\ 모델링\(1\)_이민기.jpg);
+    background:no-repeat center url(../jpg/3D\ 캐릭터\ 모델링\(1\)_이민기.jpg);
     background-size: 400px;
     -webkit-box-reflect: below -30px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.4));
 }
@@ -1737,7 +1737,7 @@ p{padding: 0px;}
     color: #666;
 }
 .painting8-text-logo{
-    background: url(/jpg/3d\ max\ logo.png)no-repeat center;
+    background: url(../jpg/3d\ max\ logo.png)no-repeat center;
     background-size: cover;
     width: 50px; height: 50px;
     margin-left: 70px;
@@ -1752,7 +1752,7 @@ p{padding: 0px;}
 .img-photo{
     position: absolute;
     margin-top: 40px; margin-left: 50px;
-    background: url(/jpg/증명사진.jpg) no-repeat center;
+    background: url(../jpg/증명사진.jpg) no-repeat center;
     background-size: 200px;
     width: 200px; height: 270px;
     box-shadow: rgba(0, 0, 0,0.7) 0 0 10px;
