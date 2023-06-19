@@ -1,0 +1,1918 @@
+body{
+    margin: 0;
+    padding: .1;
+}
+html{
+    line-height: 1.15;
+}
+div{
+    box-sizing: border-box;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+
+/* 전체 배경 색 */
+.bg{
+    width: 100%; height: 12800px;
+    background-color: black;
+    overflow: hidden;
+}
+/* 메인 탑 바 */
+.main-topbar-max{
+    display: none;
+}
+.main-topbar{
+    position: fixed;
+    width: 100%; height: 50px;
+    background:linear-gradient(to bottom,rgba(46, 44, 38, 0.7),rgba(0, 0, 0, 0.5),rgba(0,0,0,0.3),rgba(0,0,0,0));
+    backdrop-filter: blur(50px);
+    text-align: center;
+    z-index: 100;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    transition: all 1s;
+}
+
+.main-topbar li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 50px;
+}
+.main-topbar2{
+    display: none;
+}
+/* 탑 바 로고 */
+.logo1{
+    position: absolute;
+    width: 200px; height: 100px;
+    background: url(./jpg/데드스페이스-text_1.png)no-repeat center;
+    background-size: 200px;
+    left: 50px; top: 0;
+}
+/* 탑 바 메뉴 아이콘 */
+.menu{
+    position: absolute;
+    background: url(./jpg/menu-W.png)no-repeat center;
+    background-size: 80px;
+    width: 50px;height: 50px;
+    top: 2px;
+    cursor: pointer;
+}
+/* 탑 바 사람 모양 아이콘 */
+.user{
+    position: absolute;
+    background: url(./jpg/user-w.png)no-repeat center;
+    background-size: 30px;
+    width: 50px;height: 50px;
+    top: 0px;
+    cursor: pointer;
+}
+.horver-p{
+    cursor: pointer;
+    color: rgb(99, 99, 99);
+    transition: all .3s;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.horver-p:hover{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transition: all .3s;
+}
+/* 함선 마우스 커서 애니메이션 */
+.mouse{
+    position: absolute;
+    z-index: 1000;
+    width: 100vw;height: 1000px;
+    transform: translate(-50%,-50%);
+    background: url(./jpg/데드스페이스-함선.png)no-repeat center;
+    background-size: 700px;
+    transition: all 25s;
+}
+.mouse2{
+    position: absolute;
+    z-index: 1000;
+    width: 3000px;height: 3000px;
+    transform: translate(-50%,-50%);
+    background: url(./jpg/데드스페이스-파편.png) center;
+    background-size: 1000px;
+    transition: all 30s;
+}
+.mouse3{
+    position: absolute;
+    z-index: 1000;
+    width: 3000px;height: 3000px;
+    background: url(./jpg/데드스페이스-파편2.png) center;
+    transform: translate(-50%,-50%);
+    background-size: 1000px;
+    transition: all 15s;
+    opacity: .5;
+}
+.mouse4{
+    position: absolute;
+    z-index: 1000;
+    width: 300px;height: 300px;
+    background: url(./jpg/데드스페이스-마커.png)no-repeat center;
+    background-size: 300px;
+    transition: all 10s;
+    animation-name: 빙글;
+    animation-duration: 180s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes 빙글 {
+    0%{
+        transform: rotate(0deg)
+        translate(-90%,-90%);
+    }
+    50%{
+        transform: rotate(180deg)
+        translate(-90%,-90%);
+    }
+    100%{
+        transform: rotate(360deg)
+        translate(-90%,-90%);
+    }
+}
+/* 픽스 우주 배경 */
+.main-bg{
+    position: fixed;
+    overflow: hidden;
+    width: 100vw;height: 1080px;
+    background: url(./jpg/deadspace_우주.jpg)no-repeat center;
+    background-size: cover;
+}
+/* 픽스 우주 배경 속 text */
+.deadspace-text{
+    position: absolute;
+    top: 5%;
+    width: 100vw;height: 100vh;
+    background: url(./jpg/데드스페이스-text_1.png)no-repeat center;
+    background-size: 100%;
+    z-index: 1000;
+    animation-name: 지직;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes 지직 {
+    0%{
+        opacity: 1;
+    }
+    49%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    51%{
+        opacity: 1;
+    }
+    79%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0;
+    }
+    81%{
+        opacity: 1;
+    }
+    82%{
+        opacity: 1;
+    }
+    83%{
+        opacity: 0;
+    }
+    84%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.deadspace-text2{
+    position: absolute;
+    top: 5%;
+    width: 100vw;height: 100vh;
+    background: url(./jpg/데드스페이스-text_2.png)no-repeat center;
+    background-size: 100%;
+    z-index: 1000;
+    animation-name: 지직2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes 지직2 {
+    0%{
+        opacity: 0;
+    }
+    49%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    51%{
+        opacity: 0;
+    }
+    79%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 1;
+    }
+    81%{
+        opacity: 0;
+    }
+    82%{
+        opacity: 0;
+    }
+    83%{
+        opacity: 1;
+    }
+    84%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+/* 메인박스 1 */
+.main-box1-bg{
+    position: absolute;
+    top: 1150px;
+    width: 100%; height: 3000px;
+    background-color: black;
+    opacity: .7;
+}
+.main-box1{
+    position: relative;
+    top: 1080px;
+    width: 100%;height: 3000px;
+    background: url(./jpg/데드스페이스-창문.png)center;
+    background-size: 1700px;
+    background-repeat: repeat;
+
+}
+.glass{
+    position: absolute;
+    top: 1150px;
+    width: 100%;height: 3000px;
+    background: url(./jpg/데드스페이스-창문유리.jpg)center;
+    background-size: 1700px;
+    background-repeat: repeat-y;
+    opacity: .3;
+}
+
+.game-buy{
+    position: absolute;
+    width: 1660px;height: 900px;
+    background: url(./jpg/데드스페이스-게임구매.png)no-repeat center;
+    background-size: 1350px;
+    top: 140px;
+    left: 0;right: 0;margin: auto;
+    animation-name: on;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    display: none;
+}
+@keyframes on {
+    0%{
+        transform: scaleY(0);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}
+.game-buy2{
+    position: absolute;
+    width: 1660px;height: 900px;
+    background: url(./jpg/데드스페이스-게임구매2.png)no-repeat center;
+    background-size: 1350px;
+    left: 0;right: 0;margin: auto;
+    animation-name: on2;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    display: none;
+}
+@keyframes on2 {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1,.01);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}
+.game-mprs{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    background: url(./jpg/데드스페이스-게임심의등급.png)no-repeat center;
+    background-size: 1350px;
+    width: 1660px;height: 900px;
+    animation: ani1 5s linear infinite;
+}
+@keyframes ani1 {
+    0%{
+        opacity: 1;
+    }
+    19%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+    21%{
+        opacity: 1;
+    }
+    22%{
+        opacity: 1;
+    }
+    23%{
+        opacity: 0;
+    }
+    24%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    51%{
+        opacity: 0;
+    }
+    55%{
+        opacity: 0;
+    }
+    56%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.game-mprs2{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    background: url(./jpg/데드스페이스-게임심의등급2.png)no-repeat center;
+    background-size: 1350px;
+    width: 1660px;height: 900px;
+    animation: ani2 5s linear infinite;
+}
+@keyframes ani2 {
+    0%{
+        opacity: 0;
+    }
+    19%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    21%{
+        opacity: 0;
+    }
+    22%{
+        opacity: 0;
+    }
+    23%{
+        opacity: 1;
+    }
+    24%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    51%{
+        opacity: 1;
+    }
+    55%{
+        opacity: 1;
+    }
+    56%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.buy{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    top: 200px;
+    background: url(./jpg/데드스페이스-게임구매-textbox.png)no-repeat center;
+    background-size: 1200px;
+    width: 350px; height: 500px;
+    animation-name: on3;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes on3 {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.buy-text{
+    position: absolute;
+    top: 405px;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: white 0 0 10px;
+    color: white;
+    text-align: center;
+    left: 0;right: 0;margin: auto;
+    cursor: pointer;
+    opacity: .5;
+}
+.buy-text:hover{
+    opacity: 1;
+}
+
+.ea-logo{
+    position: absolute;
+    width: 100%;height: 1000px;
+    background: url(./jpg/데드스페이스_ea_logo.png)no-repeat center;
+    background-size: 100%;
+    left: 0;right: 0;margin: auto;
+    top: 1050px;
+    opacity: .5;
+    animation: ani3 2s linear infinite;
+}
+@keyframes ani3 {
+    0%{
+        opacity: .5;
+    }
+    19%{
+        opacity: .5;
+    }
+    20%{
+        opacity: 0;
+    }
+    21%{
+        opacity: .5;
+    }
+    22%{
+        opacity: .5;
+    }
+    23%{
+        opacity: 0;
+    }
+    24%{
+        opacity: .5;
+    }
+    50%{
+        opacity: .5;
+    }
+    51%{
+        opacity: 0;
+    }
+    55%{
+        opacity: 0;
+    }
+    56%{
+        opacity: .5;
+    }
+    100%{
+        opacity: .5;
+    }
+}
+@keyframes on4 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: .5;
+    }
+}
+.ea-logo2{
+    position: absolute;
+    width: 100%;height: 1000px;
+    background: url(./jpg/데드스페이스_ea_logo2.png)no-repeat center;
+    background-size: 100%;
+    left: 0;right: 0;margin: auto;
+    top: 1050px;
+    opacity: .5;
+    animation: ani4 2s linear infinite;
+}
+@keyframes ani4 {
+    0%{
+        opacity: 0;
+    }
+    19%{
+        opacity: 0;
+    }
+    20%{
+        opacity: .5;
+    }
+    21%{
+        opacity: 0;
+    }
+    22%{
+        opacity: 0;
+    }
+    23%{
+        opacity: .5;
+    }
+    24%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    51%{
+        opacity: .5;
+    }
+    55%{
+        opacity: .5;
+    }
+    56%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.left2{
+    display: none;
+}
+.left{
+    position: relative;
+    width: 1660px;
+    height: 1000px;
+    top: 1150px;
+    text-align: center;
+    margin-left: auto;margin-right: auto;
+}
+.deadspace1{
+    width: 25%;height: 600px;
+    background: url(./jpg/데드스페이스1.png)no-repeat center;
+    background-size: cover;
+    display: inline-block;
+    margin-right: 50px;
+    animation: scalexy .3s linear;
+    display: none;
+}
+@keyframes scalexy {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1,.02);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.deadspace2{
+    margin-right: 50px;
+    width: 25%;height: 600px;
+    background: url(./jpg/데드스페이스2.png)no-repeat center;
+    background-size: cover;
+    display: inline-block;
+    animation: scalexy .3s linear;
+    display: none;
+}
+
+.deadspace3{
+    width: 25%;height: 600px;
+    background: url(./jpg/데드스페이스3.png)no-repeat center;
+    background-size: cover;
+    display: inline-block;
+    animation: scalexy .3s linear;
+    display: none;
+}
+.deadspace1-buy{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 50px;
+    width: 20%;height: 600px;
+}
+
+.deadspace2-buy{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 50px;
+    width: 20%;height: 600px;
+}
+
+.deadspace3-buy{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 50px;
+    width: 20%;height: 600px;
+}
+
+.box1{
+    position: absolute;
+    width: 100%;height: 170px;
+    background-color: #222;
+    bottom: -50px;right: 10px;
+    background: url(./jpg/deadspace-buybox.png)no-repeat center;
+    background-size: 1400px;
+    animation: scaleani .2s linear;
+    cursor: pointer;
+    display: none;
+}
+.box2{
+    position: absolute;
+    width: 100%;height: 170px;
+    background-color: #222;
+    bottom: -50px;right: 10px;
+    background: url(./jpg/deadspace-buybox.png)no-repeat center;
+    background-size: 1400px;
+    animation: scaleani .2s linear;
+    cursor: pointer;
+    display: none;
+}
+.box3{
+    position: absolute;
+    width: 100%;height: 170px;
+    background-color: #222;
+    bottom: -50px;right: 10px;
+    background: url(./jpg/deadspace-buybox.png)no-repeat center;
+    background-size: 1400px;
+    animation: scaleani .2s linear;
+    cursor: pointer;
+    display: none;
+}
+.left p {
+    color: rgba(255,255,255,.7);
+    text-shadow: rgba(255,255,255,.5) 0 0 3px;
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 33px;
+}
+@keyframes scaleani {
+    0%{
+        opacity: 0;
+        transform: scaleX(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+.welcome-text{
+    position: relative;
+    top: 1100px;
+    width: 1400px;height: 800px;
+    background: url(./jpg/welcome-text.png)no-repeat center;
+    background-size: cover;
+    left: 0;right: 0;margin: auto;
+    animation: zizic;
+    opacity: 0;
+    display: none;
+}
+@keyframes zizic {
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: .7;
+    }
+    31%{
+        opacity: .3;
+    }
+    32%{
+        opacity: 1;
+    }
+    40%{
+        opacity: .5;
+    }
+    45%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+    61%{
+        opacity: .3;
+    }
+    62%{
+        opacity: .7;
+    }
+    63%{
+        opacity: .3;
+    }
+    65%{
+        opacity: 1;
+    }
+    70%{
+        opacity: .1;
+    }
+    71%{
+        opacity: .5;
+    }
+    75%{
+        opacity: 1;
+    }
+    80%{
+        opacity: .5;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+
+
+/* 메인박스 2 */
+.main-box2{
+    position: relative;
+    top: 1050px;
+    width: 100%;height: 5800px;
+    background: linear-gradient(to bottom, #000,#000,#000,rgb(20, 10, 1));
+    left: 0;right: 0;margin: auto;
+}
+.main-box-bg h1{
+    color: white;
+    margin-left: 800px;
+    font-size: 45px;
+}
+.main-box-bg h2{
+    color: #777;
+    margin-left: 800px;
+    font-size: 25px;
+}
+.main-box-bg{
+    width: 1800px;height: 1000px;
+    position: absolute;
+    background: url(./jpg/main_box2_bg1.png)no-repeat center;
+    background-size: cover;
+    text-align: left;
+    left: 0;right: 0;margin: auto;
+    opacity: 0;
+}
+@keyframes OpacityAni {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity:1;
+    }
+} 
+.re-box{
+    position: relative;
+    top: 200px;
+    width: 1100px;height: 600px;
+    left: -300px;right: 0;margin: auto;
+    background: url(./jpg/deadspace-issac.png)no-repeat center;
+    background-size: cover;
+    opacity: 0;
+}
+@keyframes topani {
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* 트레일러 */
+.T-m2{
+    display: none;
+}
+.trailer-bg{
+    top: 700px;
+    position: relative;
+    width: 100%;height: 1000px;
+    background: fixed url(./jpg/뒷배경2.jpg)no-repeat center;
+    background-size: cover;
+}
+.trailer-box{
+    position: absolute;
+    top: 200px;
+    width: 1480px; height: 720px;
+    left: 0;right: 0;margin: auto;
+}
+.trailer-box h1{
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    margin-left: 1100px;
+    top: -10px;
+}
+
+.main-box2-img{
+    position: relative;
+    width: 1000px;height: 600px;
+    left: -300px;right: 0;margin: auto;
+    background: url(./jpg/배경1.png)no-repeat center;
+    background-size: cover;
+    top: 1000px;
+    opacity: 0;
+}
+@keyframes leftani {
+    0%{
+        opacity: 0;
+        transform: translateX(-65px)
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.main-box2-img-text{
+    width: 650px;
+    font-size: 20px;
+    position: relative;
+    color: white;
+    left: 400px;right: 0;margin: auto;
+    top: 650px;
+    opacity: 0;
+}
+@keyframes rightani {
+    0%{
+        opacity: 0;
+        transform: translateX(65px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.main-box2-img-text h3{
+    color: #aaa;
+}
+.main-box2-img2{
+    position: relative;
+    width: 1000px;height: 600px;
+    left: 300px;right: 0;margin: auto;
+    background: url(./jpg/배경2.png)no-repeat center;
+    background-size: cover;
+    top: 780px;
+    opacity: 0;
+}
+.main-box2-img2-text{
+    width: 650px;
+    font-size: 20px;
+    position: relative;
+    color: white;
+    left: -100px;right: 0;margin: auto;
+    top: 450px;
+    opacity: 0;
+}
+.main-box2-img2-text h3{
+    color: #aaa;
+}
+.main-box2-img3{
+    position: relative;
+    width: 1000px;height: 600px;
+    left: -300px;right: 0;margin: auto;
+    background: url(./jpg/배경3.png)no-repeat center;
+    background-size: cover;
+    top: 600px;
+    opacity: 0;
+}
+.main-box2-img3-text{
+    width: 650px;
+    font-size: 20px;
+    position: relative;
+    color: white;
+    left: 400px;right: 0;margin: auto;
+    top: 280px;
+    opacity: 0;
+}
+.main-box2-img3-text h3{
+    color: #aaa;
+}
+.main-storybox{
+    position: relative;
+    top: 600px;
+    width: 100%;height: 700px;
+    background: url(./jpg/배경1.jpg)no-repeat center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+.story-box{
+    position: absolute;
+    width: 100%;height: 580px;
+    background: url(./jpg/story1.png)no-repeat center;
+    background-size: 1500px;
+    top: 100px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    animation: scaleX0 .3s linear;
+}
+.story-box p{
+    color: #eee;
+}
+
+.story-box2{
+    position: absolute;
+    width: 100%;height: 580px;
+    background: url(./jpg/story2.png)no-repeat center;
+    background-size: 1500px;
+    top: 100px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    display: none;
+    animation: scaleX0 .3s linear;
+}
+.story-box2 p{
+    color: #eee;
+}
+
+.story-box3{
+    position: absolute;
+    width: 100%;height: 580px;
+    background: url(./jpg/story3.png)no-repeat center;
+    background-size: 1500px;
+    top: 100px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    display: none;
+    animation: scaleX0 .5s linear;
+}
+@keyframes scaleX0 {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        transform: scale(1,.2);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+.story-box3 p{
+    color: #eee;
+}
+
+.story-btn{
+    position: absolute;
+    left: 1150px;right: 0;margin: auto;
+    top: 200px;
+    width: 300px;height: 100px;
+    background: url(./jpg/자원전쟁.jpg)no-repeat center;
+    background-size: cover;
+    opacity: 1;
+    transition: all .3s;
+    cursor: pointer;
+}
+.story-btn:hover{
+    transform: translateX(-20px);
+    transition: all .3s;
+}
+.story-btn2{
+    position: absolute;
+    left: 1150px;right: 0;margin: auto;
+    top: 350px;
+    width: 300px;height: 100px;
+    background: url(./jpg/CEC.jpg)no-repeat center;
+    background-size: cover;
+    opacity: .5;
+    transition: all .3s;
+    cursor: pointer;
+}
+.story-btn2:hover{
+    transform: translateX(-20px);
+    transition: all .3s;
+}
+.story-btn3{
+    position: absolute;
+    left: 1150px;right: 0;margin: auto;
+    top: 500px;
+    width: 300px;height: 100px;
+    background: url(./jpg/유니톨로지.jpg)no-repeat center;
+    background-size: cover;
+    opacity: .5;
+    transition: all .1s;
+    cursor: pointer;
+}
+.story-btn3:hover{
+    transform: translateX(-20px);
+    transition: all .3s;
+}
+
+.main-box3{
+    position: relative;
+    width: 100%;height: 1400px;
+    top: 1050px;
+    z-index: 1;
+    background: linear-gradient(to bottom, rgb(20, 10, 1),rgb(0, 0, 0));
+    box-shadow: rgba(0, 0, 0, 0.5) 0 700px 100px;
+}
+
+.screenshot-text{
+    position: absolute;
+    color: white;
+    left: 0;right: 0;margin: auto;
+    text-align: center;
+    width: 500px;
+    top: -150px;
+    font-size: 30px;
+}
+
+.slide-box{
+    position: absolute;
+    width: 65vw;height: 45vw;
+    left: 0;right: 0;margin: auto;
+    overflow: hidden;
+}
+
+.screenshot{
+    position: absolute;
+    width: 1250px;height: 700px;
+    left: 0;right: 0;margin: auto;
+}
+.screenshot2{
+    position: absolute;
+    width: 1250px;height: 700px;
+    transform: translateX(65vw);
+    left: 0;right: 0;margin: auto;
+}
+.screenshot3{
+    position: absolute;
+    width: 1250px;height: 700px;
+    transform: translateX(130vw);
+    left: 0;right: 0;margin: auto;
+}
+.screenshot4{
+    position: absolute;
+    width: 1250px;height: 700px;
+    transform: translateX(195vw);
+    left: 0;right: 0;margin: auto;
+}
+.screenshot5{
+    position: absolute;
+    width: 1250px;height: 700px;
+    transform: translateX(260vw);
+    left: 0;right: 0;margin: auto;
+}
+.screenshot6{
+    position: absolute;
+    width: 1250px;height: 700px;
+    transform: translateX(325vw);
+    left: 0;right: 0;margin: auto;
+}
+.screenshot7{
+    position: absolute;
+    width: 1250px;height: 700px;
+    transform: translateX(390vw);
+    left: 0;right: 0;margin: auto;
+}
+.screenshot8{
+    position: absolute;
+    width: 1250px;height: 700px;
+    transform: translateX(455vw);
+    left: 0;right: 0;margin: auto;
+}
+.screenshot9{
+    position: absolute;
+    width: 1250px;height: 700px;
+    transform: translateX(520vw);
+    left: 0;right: 0;margin: auto;
+}
+.screenshot10{
+    position: absolute;
+    width: 1250px;height: 700px;
+    transform: translateX(585vw);
+    left: 0;right: 0;margin: auto;
+}
+.screenshot11{
+    position: absolute;
+    width: 1250px;height: 700px;
+    transform: translateX(650vw);
+    left: 0;right: 0;margin: auto;
+}
+.screenshot12{
+    position: absolute;
+    width: 1250px;height: 700px;
+    transform: translateX(715vw);
+    left: 0;right: 0;margin: auto;
+}
+
+.screen-btn{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    text-align: center;
+    width: 100%;
+    top: 750px;
+}
+.screen-btn2{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    text-align: center;
+    width: 100%;
+    top: 900px;
+}
+.slide-con{
+    transition: all .5s ease-in-out;
+}
+
+.screen-btn button{
+    border: none;
+    width: 190px;height: 140px;
+    opacity: .5;
+}
+.screen-btn button:hover{
+    background-size: 280px;
+    opacity: 1;
+}
+.screen-btn2 button{
+    border: none;
+    width: 190px;height: 140px;
+    opacity: .5;
+}
+.screen-btn2 button:hover{
+    background-size: 280px;
+    opacity: 1;
+}
+
+.screen1{
+    background: url(./jpg/스크린샷.jpg)no-repeat center;
+    background-size: cover;
+}
+.screen2{
+    background: url(./jpg/스크린샷2.jpg)no-repeat center;
+    background-size: cover;
+}
+.screen3{
+    background: url(./jpg/스크린샷3.jpg)no-repeat center;
+    background-size: cover;
+}
+.screen4{
+    background: url(./jpg/스크린샷4.jpg)no-repeat center;
+    background-size: cover;
+}
+.screen5{
+    background: url(./jpg/스크린샷5.jpg)no-repeat center;
+    background-size: cover;
+}
+.screen6{
+    background: url(./jpg/스크린샷6.jpg)no-repeat center;
+    background-size: cover;
+}
+.screen7{
+    background: url(./jpg/스크린샷7.jpg)no-repeat center;
+    background-size: cover;
+}
+.screen8{
+    background: url(./jpg/스크린샷8.jpg)no-repeat center;
+    background-size: cover;
+}
+.screen9{
+    background: url(./jpg/스크린샷9.jpg)no-repeat center;
+    background-size: cover;
+}
+.screen10{
+    background: url(./jpg/스크린샷10.jpg)no-repeat center;
+    background-size: cover;
+}
+.screen11{
+    background: url(./jpg/스크린샷11.jpg)no-repeat center;
+    background-size: cover;
+}
+.screen12{
+    background: url(./jpg/스크린샷12.jpg)no-repeat center;
+    background-size: cover;
+}
+
+.main-box4{
+    position: relative;
+    top: 1050px;
+    width: 100%;height: 1000px;
+    background: url(./jpg/main_box4_bg.jpg)no-repeat center;
+    background-size: cover;
+}
+
+.ea-deadspace-logo{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    background: url(./jpg/ea_deadspace.png)no-repeat center;
+    background-size: cover;
+    width: 1000px;height: 700px;
+    top: -50px;
+    z-index: 1;
+    opacity: 0;
+}
+@keyframes upani {
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.ea-deadspace-logo-text{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    text-align: center;
+    color: white;
+    top: 400px;
+    z-index: 1;
+    font-size: 20px;
+    line-height: .5;
+    opacity: 0;
+}
+
+.main-box4-btn{
+    position: absolute;
+    top: 670px;
+    left: 0;right: 0;margin: auto;
+    width: 220px;height: 80px;
+    background: none;
+    color: rgba(255,255,255,.7);
+    border: rgba(255,255,255,.7) 3px solid;
+    z-index: 1;
+    transition: all .1s;
+    cursor: pointer;
+    opacity: 0;
+}
+.main-box4-btn:hover{
+    border: white 3px solid;
+    color: white;
+    transition: all .1s;
+}
+
+
+/* footer */
+
+.main-footer{
+    position: relative;
+    width: 100%;height: 100%;
+    top: 1050px;
+    background-color: #000;
+    left: 0;right: 0;margin: auto;
+}
+.social-box{
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    background-color: #111;
+}
+.social-box ul{
+    text-align: center;
+    list-style: none;
+
+}
+.social-box ul li{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.social-box ul li button{
+    background: none;
+    border: none;
+}
+
+.twitter{
+    background: url(./jpg/mdi_twitter.png)no-repeat center;
+    background-size: 30px;
+    width: 30px; height: 30px; 
+    cursor: pointer;
+}
+.youtube{
+    background: url(./jpg/mdi_youtube.png)no-repeat center;
+    background-size: 30px;
+    width: 30px; height: 30px; 
+    cursor: pointer;
+}
+.twitch{
+    background: url(./jpg/logos_twitch.png)no-repeat center;
+    background-size: 30px;
+    width: 30px; height: 30px; 
+    cursor: pointer;
+}
+.instagram{
+    background: url(./jpg/mdi_instagram.png)no-repeat center;
+    background-size: 30px;
+    width: 30px; height: 30px; 
+    cursor: pointer;
+    margin-right: 80px;
+}
+.logo2{
+    position: absolute;
+    width: 300px;height: 200px;
+    background: url(./jpg/데드스페이스-text_1.png)no-repeat center;
+    background-size: 500px;
+    left: 0;right: 0;margin: auto;
+    top: 110px;
+}
+
+.footer-text1{
+    position: absolute;
+    text-align: center;
+    font-size: 12px;
+    color: #bbb;
+    top: 230px;
+    left: 0;right: 0;margin: auto;
+}
+.csc{
+    width: 100%;
+    position: absolute;
+    top: 260px;
+}
+
+.csc ul{
+    text-align: center;
+    list-style: none;
+}
+.csc ul li{
+    display: inline-block;
+    color: white;
+    font-size: 12px;
+    margin-left: 20px;
+    color:#aaa;
+    cursor: pointer;
+}
+.csc ul li:hover{
+    color: #eee;
+}
+.CR{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    top: 310px;
+    background: url(./jpg/content_ratings.png)no-repeat center;
+    background-size: 100%;
+    width: 300px; height: 100px;
+}
+.footer-text2{
+    position: absolute;
+    font-size: 12px;
+    color: #bbb;
+    top: 430px;
+    text-align: center;
+    left: 0;right: 0;margin: auto;
+    font-family: sans-serif;
+}
+
+
+/* 작은 화면 */
+/* 작은 화면 */
+/* 작은 화면 */
+/* 작은 화면 */
+/* 작은 화면 */
+/* 작은 화면 */
+/* 작은 화면 */
+/* 작은 화면 */
+
+@media screen and (max-width:1285px){
+    .main-topbar-max{
+        position: fixed;
+        width: 100%;height: 70px;
+        left: 0;right: 0;margin: auto;
+        background-color: rgb(0, 0, 0);
+        display: block;
+        animation: dis_on 1s ease-out forwards;
+        border-bottom: 1px solid white;
+        z-index: 1000;
+    }
+    @keyframes dis_on {
+        0%{
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .main-topbar-max ul{
+        margin: 0;
+        list-style: none;
+    }
+    .main-topbar{
+        animation: dis_none 1s ease-out forwards;
+    }
+    @keyframes dis_none {
+        0%{
+            transform: translateY(0);
+            opacity: 1;
+        }
+        99%{
+            opacity: 1;
+        }
+        100%{
+            transform: translateY(-50px);
+            opacity: 0;
+        }
+    }
+    .logo1{
+        height: 150px;
+        left: 0;right: 0;margin: auto;
+        background-size: 200%;
+    }
+    /* 탑 바 메뉴 아이콘 */
+    .menu{
+        left: 10px;
+        top: 10px;
+        background-size: 200%;
+    }
+    /* 탑 바 사람 모양 아이콘 */
+    .user{
+        right: 10px;
+        top: 7px;
+        background-size: 70%;
+    }
+    .horver-p{
+        display: none;
+    }
+    .deadspace-text{
+        background-size: 150%;
+    }
+    .deadspace-text2{
+        background-size: 150%;
+    }
+    /* 메인박스2 */
+    .main-box1-bg{
+        width: 100%;
+    }
+    .main-box1{
+        width: 100%;
+        left: 0;right: 0;margin: auto;
+    }
+    .glass{
+        width: 100%;
+    }
+    
+    .game-buy{
+        width: 100%;
+        background-size: 120%;
+    }
+
+    .game-buy2{
+        width: 90%;
+        background-size: 120%;
+    }
+
+    .game-mprs{
+        width: 100%;
+        background-size: 120%;
+    }
+    .game-mprs2{
+        width: 100%;
+        background-size: 120%;
+    }
+    .buy{
+        top: 30%;
+        font-size: 100%;
+        background-size: 1000px;
+    }
+    .buy-text{
+        width: 100%;
+        top: 75%;
+    }
+    .left{
+        animation: off .3s ease-in-out forwards;
+    }
+    @keyframes off {
+        0%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+    .left2{
+        display: block;
+        position: relative;
+        top: 200px;
+    }
+    .deadspace1_2{
+        width: 100%;height: 200px;
+        background: url(./jpg/deadspace1_2.png)no-repeat center;
+        background-size: cover;
+        left: 0;right: 0;margin: auto;
+    }
+    .deadspace1_2_2{
+        position: absolute;
+        width: 30%;height: 300px;
+        background: url(./jpg/deadspace1_2_2.png)no-repeat center;
+        background-size: 200%;
+        right: 50px;top: -30px;
+        animation: rightR 50s linear infinite;
+    }
+    @keyframes rightR {
+        0%{
+            transform: rotate(0)
+            translate(0);
+        }        
+        50%{
+            transform: rotate(180deg)
+            translateX(30px);
+        }
+        100%{
+            transform: rotate(360deg)
+            translate(0px);
+        }
+    }
+    .deadspace1-buy_2{
+        width: 100%;height: 300px;
+        background: url(./jpg/deadspace-buybox.png)no-repeat center;
+        background-size: 1500px;
+        left: 0;right: 0;margin: auto;
+        opacity:.5;
+        animation: scaleani .2s linear;
+        cursor: pointer;
+    }
+    .deadspace1-buy_2:active{
+        opacity: 1;
+    }
+    .box1_2{
+        text-align: center;
+        color: white;
+        padding-top: 60px;
+        font-size: 25px;
+    }
+    .deadspace2_2{
+        width: 100%;height: 200px;
+        background: url(./jpg/deadspace2_2.png)no-repeat center;
+        background-size: cover;
+        left: 0;right: 0;margin: auto;
+    }
+    .deadspace2-buy_2{
+        width: 100%;height: 300px;
+        background: url(./jpg/deadspace-buybox.png)no-repeat center;
+        background-size: 1500px;
+        left: 0;right: 0;margin: auto;
+        opacity:.5;
+        animation: scaleani .2s linear;
+        cursor: pointer;
+    }
+    .deadspace2-buy_2:active{
+        opacity: 1;
+    }
+    .box2_2{
+        text-align: center;
+        color: white;
+        padding-top: 60px;
+        font-size: 25px;
+    }
+    .deadspace3_2{
+        width: 100%;height: 200px;
+        background: url(./jpg/deadspace3_2.png)no-repeat center;
+        background-size: cover;
+    }
+    .deadspace3-buy_2{
+        width: 100%;height: 300px;
+        background: url(./jpg/deadspace-buybox.png)no-repeat center;
+        background-size: 1500px;
+        left: 0;right: 0;margin: auto;
+        opacity:.5;
+        animation: scaleani .2s linear;
+        cursor: pointer;
+    }
+    .deadspace3-buy_2:active{
+        opacity: 1;
+    }
+    .box3_2{
+        text-align: center;
+        color: white;
+        padding-top: 60px;
+        font-size: 25px;
+    }
+    .welcome-text{
+        width: 100%;
+        background-size: 100%;
+        z-index: 100;
+        top: 400px;
+    }
+    .main-box2{
+        width: 100%;
+    }
+    .main-box-bg{
+        width: 100%;
+        left: 0;right: 0;margin: auto;
+        background-size: 100%;
+        z-index: 2;
+    }
+    .main-box-bg h1{
+        margin-left: 0;
+        text-align: center;
+        font-size: 200%;
+    }
+    .main-box-bg h2{
+        margin-left: 0;
+        text-align: center;
+        font-size: 15px;
+        color: #ddd;
+    }
+    .re-box{
+        width: 100%;
+        background-size: 100%;
+        left: 0;right: 0;margin: auto;
+        z-index: 1;
+    }
+    .trailer-bg{
+        width: 100%;
+        height: 700px;
+    }
+    .trailer-box{
+        width: 100%;
+        left: 0;right: 0;margin: auto;
+    }
+    .T-m2{
+        position: absolute;
+        display: block;
+        width: 500px;
+        height: 280px;
+        left: 0;right: 0;margin: auto;
+    }
+    .T-m{
+        display: none;
+    }
+    .trailer-box h1{
+        color: white;
+        font-size: 50px;
+        text-align: center;
+        left: 0;right: 0;margin: auto;
+        top: -300px;
+    }
+    .main-box2-img{
+        position: relative;
+        width: 100%;height: 500px;
+        left: 0px;right: 0;margin: auto;
+        background: url(./jpg/배경1.png)no-repeat center;
+        background-size: cover;
+        top: 1000px;
+        opacity: 0;
+    }
+    @keyframes leftani {
+        0%{
+            opacity: 0;
+            transform: translateX(-65px)
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    .main-box2-img-text{
+        width: 100%;
+        font-size: 90%;
+        position: relative;
+        color: white;
+        left: 0;right: 0;margin: auto;
+        text-align: center;
+        top: 750px;
+        opacity: 0;
+    }
+    @keyframes rightani {
+        0%{
+            opacity: 0;
+            transform: translateX(65px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    .main-box2-img2{
+        position: relative;
+        width: 100%;height: 500px;
+        left: 0;right: 0;margin: auto;
+        background: url(./jpg/배경2.png)no-repeat center;
+        background-size: cover;
+        top: 880px;
+        opacity: 0;
+    }
+    .main-box2-img2-text{
+        width: 100%;
+        font-size: 90%;
+        position: relative;
+        color: white;
+        left: 0;right: 0;margin: auto;
+        text-align: center;
+        top: 550px;
+        opacity: 0;
+    }
+    .main-box2-img3{
+        position: relative;
+        width: 100%;height: 500px;
+        left: 0px;right: 0;margin: auto;
+        background: url(./jpg/배경3.png)no-repeat center;
+        background-size: cover;
+        top: 790px;
+        opacity: 0;
+    }
+    .main-box2-img3-text{
+        width: 100%;
+        font-size: 90%;
+        position: relative;
+        color: white;
+        left: 0px;right: 0;margin: auto;
+        text-align: center;
+        top: 500px;
+        opacity: 0;
+    }
+    .main-box2-img3-text h3{
+        color: #aaa;
+    }
+
+    .main-storybox h1{
+        position: absolute;
+        left: 0;right: 0;margin: auto;
+        top: -100px;
+        font-size: 40px;
+    }
+    .main-storybox{
+        width: 100%;
+        top: 800px;
+    }
+    .main-storybox p{
+        color: #ccc;
+        font-size: 11px;
+    }
+    .story-box{
+        width: 100%;
+        left: 0;right: 0;margin: auto;
+        top: -20px;
+    }
+    .story-box2{
+        width: 100%;
+        left: 0;right: 0;margin: auto;
+        top: -20px;
+    }
+    .story-box3{
+        width: 100%;
+        left: 0;right: 0;margin: auto;
+        top: -20px;
+    }
+
+    .story-btn{
+        left: 0;right: 0;margin: auto;
+        height: 50px;
+        top: 400px;
+    }
+    .story-btn h4{
+        position: absolute;
+        left: 0;right: 0;margin: auto;
+        top: 10px;
+    }
+    .story-btn2{
+        left: 0;right: 0;margin: auto;
+        height: 50px;
+        top: 450px;
+    }
+    .story-btn2 h4{
+        position: absolute;
+        left: 0;right: 0;margin: auto;
+        top: 10px;
+    }
+    .story-btn3{
+        left: 0;right: 0;margin: auto;
+        height: 50px;
+        top: 500px;
+    }
+    .story-btn3 h4{
+        position: absolute;
+        left: 0;right: 0;margin: auto;
+        top: 10px;
+    }
+    .main-box3{
+        width: 100%;
+    }
+    .screenshot-text{
+        top: -450px;
+    }
+    .slide-box{
+        top: -300px;
+        width: 100%; height: 1000px;
+    }
+    .slide-con{
+        transition: none;
+    }
+    .screenshot{
+        width: 500px;height: 400px;
+        background-size: cover;
+        transition: none;
+    }
+    .screenshot2{
+        width: 500px;height: 400px;
+        background-size: cover;
+        transform: translateX(100vw);
+    }
+    .screenshot3{
+        width: 500px;height: 400px;
+        background-size: cover;
+        transform: translateX(200vw);
+    }
+    .screenshot4{
+        width: 500px;height: 400px;
+        background-size: cover;
+        transform: translateX(300vw);
+    }
+    .screenshot5{
+        width: 500px;height: 400px;
+        background-size: cover;
+        transform: translateX(400vw);
+    }
+    .screenshot6{
+        width: 500px;height: 400px;
+        background-size: cover;
+        transform: translateX(500vw);
+    }
+    .screenshot7{
+        width: 500px;height: 400px;
+        background-size: cover;
+        transform: translateX(600vw);
+    }
+    .screenshot8{
+        width: 500px;height: 400px;
+        background-size: cover;
+        transform: translateX(700vw);
+    }
+    .screenshot9{
+        width: 500px;height: 400px;
+        background-size: cover;
+        transform: translateX(800vw);
+    }
+    .screenshot10{
+        width: 500px;height: 400px;
+        background-size: cover;
+        transform: translateX(900vw);
+    }
+    .screenshot11{
+        width: 500px;height: 400px;
+        background-size: cover;
+        transform: translateX(1000vw);
+    }
+    .screenshot12{
+        width: 500px;height: 400px;
+        background-size: cover;
+        transform: translateX(1100vw);
+    }
+    .screen-btn{
+        top: 200px;
+    }
+    .screen-btn button{
+        width: 100px;height: 100px;
+    }
+    .screen-btn2{
+        top: 400px;
+    }
+    .screen-btn2 button{
+        width: 100px;height: 100px;
+    }  
+    .ea-deadspace-logo{
+        position: absolute;
+        left: 0;right: 0;margin: auto;
+        background: url(./jpg/ea_deadspace.png)no-repeat center;
+        background-size: cover;
+        width: 100%;height: 700px;
+        top: -50px;
+        z-index: 1;
+        opacity: 0;
+    }
+
+    .ea-deadspace-logo-text{
+        position: absolute;
+        left: 0;right: 0;margin: auto;
+        text-align: center;
+        color: white;
+        top: 400px;
+        z-index: 1;
+        font-size: 20px;
+        line-height: 1;
+        opacity: 0;
+    }
+    
+    .main-box4-btn{
+        top: 800px;
+    }
+    .social-box ul li{
+        display: inline-block;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    .csc ul li{
+        margin-left: 0px;
+    }
+}
