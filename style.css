@@ -1,275 +1,1581 @@
 body{
-    margin: 0px;
+    margin: 0;
     padding: 0.1px;
 }
-
+html{
+    line-height: 1.15;
+}
 div{
     box-sizing: border-box;
 }
-
-html{
-    line-height: 1.15px;
+p{
+    padding: 0;
+    margin: 0;
+}
+.all-br{
+    width: 100%; height: 7070px;
+    background-color: rgba(0, 0, 0, .95);
+    overflow: hidden;
+    left: 0;right: 0;margin: auto;
+}
+.all-br::after{
+    content: "";
+    height: 7070px;width: 100%;
+    position: absolute;
+    background: url(./jpg/cement-texture.jpg)center;
+    background-repeat: repeat;
+    background-size: 100;
+    opacity: .7;
+    z-index: -1;
+    left: 0;right: 0;top: 0;bottom: 0;
+}
+.deadspacein{
+    display: none;
 }
 
-p{padding: 0px;}
-
-.main-box{
-    background: url(./jpg/PORTFOLIO\ 첫장.jpg) no-repeat center;
-    background-size: cover;
-    position: relative;
-    left: 0; right: 0;
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    
+.logo1{
+    position: absolute;
+    width: 100px;height: 100px;
+    background: url(./jpg/Crimson\ Desert\ Logo.png)no-repeat center;
+    background-size: 100px;
+    top: -25px; left: 100px;
 }
-
-.btn-box{
-    background: url(./jpg/Component\ 3.png)no-repeat;
-    position: fixed;
-    top: 60%;
-    right: 6%;
-    width: 24%;
-    height:25%;
-    transition: ease-in-out 0.3s;
-    background-size: 80%;
+.menu{
+    position: absolute;
+    background: url(./jpg/menu-W.png)no-repeat center;
+    background-size: 80px;
+    width: 50px;height: 50px;
+    top: 2px;
     cursor: pointer;
 }
-.btn-box:active{
-    background: url(./jpg/Property\ 1=Component\ 2.png)no-repeat;
-    transform: translateY(10px);
-    background-size: 80%;
+.user{
+    position: absolute;
+    background: url(./jpg/user-w.png)no-repeat center;
+    background-size: 30px;
+    width: 50px;height: 50px;
+    top: 0px;
+    cursor: pointer;
 }
-
-.ani-box{
-    background: url(./jpg/작품보기.png) no-repeat;
-    position: fixed;
-    top: 40%; right: 9.3%;
-    width: 15%; height: 25%;
-    background-size: 50%;
-    animation-name: y축;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes y축{
-    0%{
-        transform: translateY(0px);
-    }
-    50%{
-        transform: translateY(10px);
-    }
-    100%{
-        transform: translateY(0px);
-    }
-}
-
 
 .line{
-    position: fixed;
-    width: 20%; height: 20%;
-    top: 64%; right: 0%;
-
+    position: relative;
+    width: 1080px; height: 200px;
+    background:url(./jpg/중앙\ 선.png)no-repeat center;
+    background-size: cover;
+    top: 300px;
+    left: 0; right: 0; margin: auto;
+}
+.line h2{
+    color: rgb(253, 253, 253);
+    text-align: center;
+    padding-top: 60px;
+    font-size: 50px;
+    opacity: 0;
+    animation: lineAni 1s ease-in;
+}
+.line2{
+    position: relative;
+    background:url(./jpg/중앙\ 선.png)no-repeat center;
+    background-size: cover;
+    width: 1080px; height: 200px;
+    top: -400px;
+    left: 0px; right: 0; margin: auto;
+}
+.line2 h2{
+    color: rgb(253, 253, 253);
+    text-align: center;
+    padding-top: 60px;
+    font-size: 50px;
+    opacity: 0;
+    animation: lineAni 1s ease-in;
+}
+.line3{
+    position: relative;
+    background:url(./jpg/중앙\ 선.png)no-repeat center;
+    background-size: cover;
+    width: 1080px; height: 200px;
+    top: -400px;
+    left: 0px; right: 0; margin: auto;
+}
+.line3 h2{
+    color: rgb(253, 253, 253);
+    text-align: center;
+    padding-top: 60px;
+    font-size: 50px;
+    opacity: 0;
+    animation: lineAni 1s ease-in;
+}
+.line4{
+    position: relative;
+    background:url(./jpg/중앙\ 선.png)no-repeat center;
+    background-size: cover;
+    width: 1080px; height: 200px;
+    top: -100px;
+    left: 0px; right: 0; margin: auto;
+}
+.line4 h2{
+    color: rgb(253, 253, 253);
+    text-align: center;
+    padding-top: 60px;
+    font-size: 50px;
+    opacity: 0;
+    animation: lineAni 1s ease-in;
 }
 
-.o{
-    margin-left: 200px;
-    margin-top: 30px;
-    width: 1%; height: 2%;
-    background-color: white;
-    border-radius: 30px;
-    box-shadow: white 0px 0px 10px,
-                white 0px 0px 20px,
-                white 0px 0px 30px,
-                white 0px 0px 40px;
-    animation-name: 반딧불;
-    animation-duration: 50s;
-    animation-iteration-count: infinite;
-    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.o2{
-    margin-left: 500px; margin-top: 500px;
-    width: 1%; height: 2%;
-    background-color: white;
-    border-radius: 30px;
-    box-shadow: #eee 0px 0px 10px,
-                #eee 0px 0px 20px,
-                #eee 0px 0px 30px,
-                #eee 0px 0px 40px;
-    animation-name: 반딧불2;
-    animation-duration: 50s;
-    animation-iteration-count: infinite;
-    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-.o3{
-    margin-left: 1500px; margin-top: 200px;
-    width: 1%; height: 2%;
-    background-color: white;
-    border-radius: 30px;
-    box-shadow: #eee 0px 0px 10px,
-                #eee 0px 0px 20px,
-                #eee 0px 0px 30px,
-                #eee 0px 0px 40px;
-    animation-name: 반딧불3;
-    animation-duration: 50s;
-    animation-iteration-count: infinite;
-    transition-timing-function: cubic-bezier(.02,.56,.96,.36);
-}
-
-
-@keyframes 반딧불{
-    0%{
-        transform: translate(0px, 0px);
-    }
-    10%{
-        transform: translate(200px, 100px);
-        opacity: 100%;
-    }
-    10%{
-        transform: translate(200px, -50px);
-        opacity: 100%;
-    }
-    20%{
-        transform: translate(220px, 80px);
-        opacity: 50%;
-    }
-    30%{
-        transform: translate(240px, 150px);
-        opacity: 20%;
-        width: 1%; height: 2%;
-    }
-    40%{
-        transform: translate(200px, 200px);
-        opacity: 100%;
-        width: 1.5%; height: 2.5%;
-    }
-    50%{
-        transform: translate(110px, 250px);
-        opacity: 60%;
-        width: 1%; height: 2%;
-        animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-    60%{
-        transform: translate(50px, 330px);
-        animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-    70%{
-        transform: translate(-100px, 200px);
-        animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-    80%{
-        transform: translate(-240px, 70px);
-
-    }
-    90%{
-        transform: translate(-120px, 10px);
-    }
-    100%{
-        transform: translate(0px, 0px);
-    }
-}
-@keyframes 반딧불2{
-    0%{
-        transform: translate(0px, 0px);
-    }
-    5%{
-        transform: translate(30px, 10px);
-
-    }
-    20%{
-        transform: translate(70px, 40px);
-
-    }
-    35%{
-        transform: translate(100px, 26px);
-
-    }
-    45%{
-        transform: translate(120px, 50px);
-        
-        
-
-    }
-    55%{
-        transform: translate(50px, 100px);
-
-    }
-    70%{
-        transform: translate(0px, 150px);
-    }
-    75%{
-        transform: translate(-100px, 100px);
-    }
-    80%{
-        transform: translate(-140px, 70px);
-    }
-    90%{
-        transform: translate(-60px, 10px);
-    }
-    100%{
-        transform: translate(0px, 0px);
-    }
-}
-@keyframes 반딧불3{
+@keyframes lineAni {
     from{
-        transform: translate(0px);
-        animation-timing-function: cubic-bezier(.13,.42,.88,.6);
-    }
-
-    10%{
-        transform: translate(20px,10px);
-        animation-timing-function: cubic-bezier(.13,.42,.88,.6);
-    }
-    20%{
-        transform: translate(30px,10px);
-        animation-timing-function: cubic-bezier(.13,.42,.88,.6);
-    }
-    30%{
-        transform: translate(50px,-10px);
-        animation-timing-function: cubic-bezier(.03,.83,.95,.02);
-    }
-    40%{
-        transform: translate(20px,-30px);
-        animation-timing-function: cubic-bezier(.13,.42,.66,.49);
-    }
-    50%{
-        transform: translate(-70px,-40px);
-        animation-timing-function: cubic-bezier(.13,.42,.66,.49);
-    }
-    60%{
-        transform: translate(-75px,-25px);
-        animation-timing-function: cubic-bezier(.13,.42,.66,.49);
-    }
-    70%{
-        transform: translate(-60px,0px);
-        animation-timing-function: cubic-bezier(.13,.42,.66,.49);
-    }
-    80%{
-        transform: translate(-20px,50px);
-        animation-timing-function: cubic-bezier(.13,.42,.66,.49);
-    }
-    90%{
-        transform: translate(-10px,20px);
-        animation-timing-function: cubic-bezier(.13,.42,.66,.49);
+        opacity: 0;
     }
     to{
-        transform: translate(0px,);
-        animation-timing-function: cubic-bezier(.13,.42,.66,.49);
+        opacity: .9;
+    }
+}
+@keyframes lineDisappear {
+    from{
+        opacity: .9;
+    }
+    to{
+        opacity: 0;
+    }
+}
+.horver-p{
+    cursor: pointer;
+    color: rgb(99, 99, 99);
+    transition: all .3s;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.horver-p:hover{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transition: all .3s;
+}
+
+.main-topbar{
+    position: fixed;
+    width: 100%; height: 50px;
+    background:linear-gradient(to bottom,rgba(46, 44, 38, 0.7),rgba(0, 0, 0, 0.5),rgba(0,0,0,0.3),rgba(0,0,0,0));
+    backdrop-filter: blur(50px);
+    text-align: center;
+    z-index: 100;
+    border-bottom: 1px solid rgb(245, 218, 183)
+}
+
+.main-topbar li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 50px;
+}
+.main-topbar2{
+    display: none;
+}
+.in{
+    position: fixed;
+    color: rgb(224, 255, 206);
+    top: 50px;
+    width: 100vw;height: 25px;
+    background-color: rgba(255, 191, 95, 0.3);
+    left: 0;right: 0;margin: auto;
+}
+.in p{
+    animation: updown 1s infinite ease-in-out;
+}
+@keyframes updown {
+    0%{
+        padding-top: 0px;
+    }
+    50%{
+        padding-top: 5px;
+    }
+    100%{
+        padding-top: 0px;
+    }
+}
+
+.main{
+    position: relative;
+    width: 100%; height: 1080px;
+    left: 0;right: 0;margin: auto;
+    overflow: hidden;
+}
+.main-img{
+    position: absolute;
+    background:linear-gradient(to bottom,rgba(0,0,0,.8),rgba(0,0,0,.5),rgba(0,0,0,.8),rgba(0,0,0,.8)), url(./jpg/Rectangle\ 1.jpg)no-repeat center;
+    background-size: cover;
+    width: 100%; height: 1080px;
+    left: 0;right: 0;margin: auto;
+}
+.logo-box{
+    position: absolute;
+    background: url(./jpg/붉은사막.png)no-repeat center;
+    background-size: cover;
+    width: 1520px; height: 300px;
+    left: 0;right: 0;margin: auto;
+    top: -100px;
+    animation: down 1s ease-in forwards;
+    opacity: 0;
+}
+@keyframes down {
+    from{
+        top: -100px;
+        opacity: 0;
+    }
+    50%{
+        top: 30%;
+        opacity: 0;
+    }
+    to{
+        top: 40%;
+        opacity: 1;
+    }
+}
+.gameplay-bg-r{
+    position: absolute;
+    top: 660px;
+    left: 0;right: 0;margin: auto;
+    background: url(./jpg/붉-game-play-빛.png)no-repeat center;
+    background-size: 1200px;
+    width: 100%;height: 450px;
+    display: none;
+    animation: 투명 .5s ease-in forwards;
+    opacity: 0;
+}
+.gameplay-bg{
+    position: absolute;
+    top: 660px;
+    background: url(./jpg/붉-game-play.png)no-repeat center ;
+    background-size: 1200px;
+    width: 100%;height: 450px;
+    left: 0;right: 0;margin: auto;
+    opacity: 0;
+    animation: 투명 .5s ease-in forwards;
+
+}
+.play-text{
+    position: absolute;
+    color: rgb(223, 180, 100);
+    border: none;
+    z-index: 1;
+    left: 0; right: 0; margin: auto;
+    top: 815px;
+    width: 300px; height: 70px;
+    background: none;
+    padding: 20px 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    animation: 투명 .5s ease-in forwards;
+    opacity: 0;
+    
+}
+@keyframes 투명 {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: .7;
+    }
+}
+
+.main2{
+    width: 100vw; height: 1500px;
+    left: 0; right: 0; margin: auto;
+    overflow: hidden;
+}
+
+.story-box{
+    position: relative;
+    width: 700px; height: 700px;
+    background: url(./jpg/붉은사막\ 스토리이미지배경.jpg)no-repeat center;
+    background-size: 700px;
+    opacity: 0;
+    left: 0;right: 0;margin: auto;
+    animation: topSlide 1s ease-in;
+}
+.story-text-box{
+    position: absolute;
+    background: url(./jpg/문양1.png)no-repeat center;
+    background-size:1000px;
+    width: 500px; height: 700px;
+    top: 1900px;
+    left: 0;right: 0;margin: auto;
+    color: rgb(155, 155, 155);
+}
+.story-T{
+    width: 300px;height: 500px;
+    position: absolute;
+    top: 300px; left: 150px;
+}
+@keyframes topSlide {
+    from{
+        top: 300px;
+        opacity: 0;
+    }
+    to{
+        top: 250px;
+        opacity: 1;
+    }
+}
+@keyframes topSlideDisappear {
+    from{
+        top: 250px;
+        opacity: 1;
+    }
+    to{
+        top: 300px;
+        opacity: 0;
+    }
+}
+@keyframes topSlideDisappear2 {
+    from{
+        top: 250px;
+        opacity: 1;
+    }
+    to{
+        top: 200px;
+        opacity: 0;
+    }
+}
+.story-character{
+    position: absolute;
+    width: 1500px; height: 1000px;
+    background: url(./jpg/붉은사막\ 스토리캐릭터.png)no-repeat center;
+    background-size: 800px;
+    animation: leftSlide 1s ease-in;
+    opacity: 0;
+}
+@keyframes leftSlide {
+    from{
+        left: -450px;
+        top: -100px;
+        opacity: 0;
+    }
+    to{
+        left: -400px;
+        top: -150px;
+        opacity: 1;
+    }
+}
+@keyframes leftSlideDisappear {
+    from{
+        left: -400px;
+        top: -150px;
+        opacity: 1;
+    }
+    to{
+        left: -450px;
+        top: -100px;
+        opacity: 0;
+    }
+}
+.story-text{
+    position: absolute;
+    border-bottom: 3px inset rgb(224, 164, 51);
+    border-top: 3px inset rgb(224, 164, 51) ;
+    box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 5px;
+    width: 200px; height: 100px;
+    color: rgb(218, 218, 218);
+    padding-left: 20px;
+    top: 850px;
+    font-size: 15px;
+    opacity: .9;
+    padding-top: 20px;
+    background-color: rgba(0, 0, 0,.5);
+    backdrop-filter: blur(5px);
+    animation: rightSlide 1s ease-in;
+    cursor: pointer;
+}
+@keyframes rightSlide {
+    from{
+        left: 650px;
+        top: 480px;
+        opacity: 0;
+    }
+    to{
+        left: 600px;
+        top: 470px;
+        opacity: .9;
+    }
+}
+@keyframes rightSlideDisappear {
+    from{
+        left: 600px;
+        top: 470px;
+        opacity: .9;
+    }
+    to{
+        left: 650px;
+        top: 480px;
+        opacity: 0;
+    }
+}
+
+.main3{
+    position: relative;
+    width: 1320px; height: 1200px;
+    overflow: hidden;
+    top: -300px;
+    left: 0;right: 0;margin: auto;
+}
+.main3-box1{
+    position: absolute;
+    overflow: hidden;
+    width: 1320px; height: 30vh;
+    background: linear-gradient(to right,rgba(64, 64, 65, 0),rgba(98, 116, 117, 0.5),rgba(162, 199, 211, 0.8),rgb(157, 227, 255));
+    background-size: cover;
+    animation: opacityAni 1s ease-in;
+    opacity: 0;
+    cursor: pointer;
+}
+@keyframes opacityAni {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes opacityAniDisappear {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+.mouseover{
+    position: absolute;
+    width: 100vw; height: 30vh;
+}
+
+.sky1{
+    position: absolute;
+    width: 1320px; height: 300px;
+    left: 20%;
+    background: url(./jpg/구름1.png)no-repeat center;
+    background-size: cover;
+    transition: all 3.5s;
+}
+.sky2{
+    position: absolute;
+    width: 1320px; height: 300px;
+    left: 20%;
+    background: url(./jpg/구름2.png)no-repeat center;
+    background-size: cover;
+    transition: all 2s;
+}
+
+.sky3{
+    position: absolute;
+    width: 1320px; height: 300px;
+    right: 20%;
+    background: url(./jpg/구름3.png)no-repeat center;
+    background-size: cover;
+    transition: all 3s;
+    opacity: .2;
+}
+.dragon{
+    position: absolute;
+    background: url(./jpg/dragon.png)no-repeat center;
+    background-size: 1000px;
+    width: 1320px; height: 300px;
+    left: 50%;
+    transition: all 2.5s;
+}
+.dragon-text{
+    color: #dbdbdb;
+    position: absolute;
+    top: 180px;
+    left: 0;right: 0;margin: auto;
+    width: 300px;height: 100px;
+    font-size: 17px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: #ffffff 2px inset;
+    border-bottom: #ffffff 2px inset;
+    cursor: pointer;
+}
+.main3-box2{
+    position: absolute;
+    width: 1320px; height: 300px;
+    top: 290px;
+    left: 0;right: 0;margin: auto;
+    background: linear-gradient(to right,rgba(64, 64, 65, 0),rgba(98, 116, 117, 0.5),rgba(162, 199, 211, 0.8),rgb(157, 227, 255));
+    background-size: cover;
+    animation: opacityAni2 1s ease-in;
+    opacity: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+.bg1{
+    position: absolute;
+    background:linear-gradient(to left,rgba(0,0,0,1),rgba(0,0,0,1),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0)), url(./jpg/붉은사막-생활.jpg)no-repeat center;
+    background-size: cover;
+    width: 1320px; height: 300px;
+    top: 0px;
+    transition: all 3s ease-in-out;
+}
+.bg1:hover{
+    width: 1320px; height: 100vh;
+    top: -500px;
+    transition: all 3s ease-in-out;
+}
+.bg1-text{
+    color: #dbdbdb;
+    position: absolute;
+    top: 180px;
+    left: 0;right: 0;margin: auto;
+    width: 300px;height: 100px;
+    font-size: 17px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: #ffffff 2px inset;
+    border-bottom: #ffffff 2px inset;
+    cursor: pointer;
+}
+@keyframes opacityAni2 {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes opacityAni2Disappear {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+.main3-box3{
+    position: absolute;
+    width: 1320px; height: 300px;
+    top: 580px;
+    left: 0;right: 0;margin: auto;
+    background-color: aliceblue;
+    opacity: 1;
+    overflow: hidden;
+    cursor: pointer;
+}
+.bg2{
+    position: absolute;
+    background: url(./jpg/넓은세계.jpg)no-repeat center;
+    background-size: cover;
+    width: 1320px; height: 300px;
+    top: 0px;
+    transition: all 3s ease-in-out;
+}
+.bg2:hover{
+    width: 1320px; height: 100vh;
+    top: -200px;
+    transition: all 3s ease-in-out;
+}
+.bg2-text{
+    color: #dbdbdb;
+    position: absolute;
+    top: 180px;
+    left: 0;right: 0;margin: auto;
+    width: 300px;height: 100px;
+    font-size: 17px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: #ffffff 2px inset;
+    border-bottom: #ffffff 2px inset;
+    cursor: pointer;
+}
+
+.main4-box{
+    position: relative;
+    background: fixed url(./jpg/news.jpg)no-repeat center;
+    background-size: cover;
+    top: -300px;
+    width: 100%;height: 800px;
+    background-color: #ff8c2e;
+    left: 0;right: 0;margin: auto;
+}
+.left-box{
+    padding-top: 50px;
+    text-align: center;
+    width: 100%;
+    height: 400px;
+}
+.left-box2{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+}
+.news1{
+    display: inline-block;
+    margin-right: 50px;
+    width: 400px; height: 300px;
+    background: url(./jpg/news1.jpg)no-repeat center;
+    background-size: 600px;
+    transition: all 1s;
+    cursor: pointer;
+}
+.news2{
+    margin-left: 50px;
+    display: inline-block;
+    width: 400px; height: 300px;
+    background: url(./jpg/news2.jpg)no-repeat center;
+    background-size: 600px;
+    transition: all 1s;
+    cursor: pointer;
+}
+.news3{
+    margin-right: 50px;
+    display: inline-block;
+    width: 400px; height: 300px;
+    background: url(./jpg/news3.jpg)no-repeat center;
+    background-size: 600px;
+    transition: all 1s;
+    cursor: pointer;
+}
+.news4{
+    margin-left: 50px;
+    display: inline-block;
+    width: 400px; height: 300px;
+    background: url(./jpg/news4.jpg)no-repeat center;
+    background-size: 600px;
+    transition: all 1s;
+    cursor: pointer;
+}
+.news1:hover{
+    background-size: 700px;
+    transition: all 1s;
+}
+.news2:hover{
+    background-size: 700px;
+    transition: all 1s;
+}
+.news3:hover{
+    background-size: 700px;
+    transition: all 1s;
+}
+.news4:hover{
+    background-size: 700px;
+    transition: all 1s;
+}
+.main4-box h3{
+    padding-top: 230px;
+    color: rgb(255, 255, 255);
+}
+.main5-box{
+    width: 100%; height: 1000px;
+}
+.left-box3{
+    width: 100%;
+    text-align: center;
+}
+.left-box4{
+    width: 100%;
+    text-align: center;
+}
+.img-box1{
+    margin: 25px 0px;
+    display: inline-block;
+    width: 250px; height: 250px;
+    background: url(./jpg/스크린샷1.jpg)no-repeat center;
+    background-size: 500px;
+    transition: all .3s;
+    cursor: pointer;
+}
+.img-box2{
+    margin: 25px 0px;
+    display: inline-block;
+    width: 250px; height: 250px;
+    background: url(./jpg/스크린샷2.jpg)no-repeat center;
+    background-size: 500px;
+    transition: all .3s;
+    cursor: pointer;
+}
+.img-box3{
+    margin: 25px 0px;
+    display: inline-block;
+    width: 250px; height: 250px;
+    background: url(./jpg/스크린샷3.jpg)no-repeat center;
+    background-size: 500px;
+    transition: all .3s;
+    cursor: pointer;
+}
+.img-box4{
+    margin: 25px 0px;
+    display: inline-block;
+    width: 250px; height: 250px;
+    background: url(./jpg/스크린샷4.jpg)no-repeat center;
+    background-size: 500px;
+    transition: all .3s;
+    cursor: pointer;
+}
+.img-box5{
+    margin: 25px 0px;
+    display: inline-block;
+    width: 250px; height: 250px;
+    background: url(./jpg/스크린샷5.jpg)no-repeat center;
+    background-size: 500px;
+    transition: all .3s;
+    cursor: pointer;
+}
+.img-box6{
+    margin: 25px 0px;
+    display: inline-block;
+    width: 250px; height: 250px;
+    background: url(./jpg/스크린샷6.jpg)no-repeat center;
+    background-size: 500px;
+    transition: all .3s;
+    cursor: pointer;
+}
+.img-box7{
+    margin: 25px 0px;
+    display: inline-block;
+    width: 250px; height: 250px;
+    background: url(./jpg/스크린샷7.jpg)no-repeat center;
+    background-size: 500px;
+    transition: all .3s;
+    cursor: pointer;
+}
+.img-box8{
+    margin: 25px 0px;
+    display: inline-block;
+    width: 250px; height: 250px;
+    background: url(./jpg/스크린샷8.jpg)no-repeat center;
+    background-size: 500px;
+    transition: all .3s;
+    cursor: pointer;
+}
+.img-box9{
+    margin: 25px 0px;
+    display: inline-block;
+    width: 250px; height: 250px;
+    background: url(./jpg/스크린샷9.jpg)no-repeat center;
+    background-size: 500px;
+    transition: all .3s;
+    cursor: pointer;
+}
+.img-box10{
+    margin: 25px 0px;
+    display: inline-block;
+    width: 250px; height: 250px;
+    background: url(./jpg/스크린샷10.jpg)no-repeat center;
+    background-size: 500px;
+    transition: all .3s;
+    cursor: pointer;
+}
+.img-box1:hover,.img-box2:hover,.img-box3:hover,.img-box4:hover,.img-box5:hover,.img-box6:hover,.img-box7:hover,.img-box8:hover,.img-box9:hover,.img-box10:hover{
+    background-size: 600px;
+    transition: all .3s;
+}
+.more-box{
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    color: rgb(224, 143, 37);
+    font-weight: 500;
+    cursor: pointer;
+}
+.more-img{
+    position: absolute;
+    background: url(./jpg/더보기.png)no-repeat center;
+    background-size: 150px;
+    width: 200px; height: 200px;
+    left: 0;right: 0;margin: auto;
+    top: -50px;
+}
+
+.last-box{
+    position: relative;
+    top: 200px;
+    width: 100%;height:300px;
+    background: url(./jpg/드래곤2.jpg)no-repeat;
+    background-position: 0%;
+    background-size: 100%;
+    text-align: center;
+    box-shadow: #000 10px 0 10px;
+}
+.last-box h1{
+    padding-top: 100px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+.more-box:hover{
+    text-shadow: rgb(255, 157, 45) 0 0 10px;
+}
+/* footer */
+
+.main-footer{
+    position: relative;
+    width: 100%;height: 500px;
+    background-color: #333;
+    left: 0;right: 0;margin: auto;
+}
+.social-box{
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    background-color: #000;
+}
+.social-box ul{
+    text-align: center;
+    list-style: none;
+
+}
+.social-box ul li{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.social-box ul li button{
+    background: none;
+    border: none;
+}
+
+.twitter{
+    background: url(./jpg/mdi_twitter.png)no-repeat center;
+    background-size: 30px;
+    width: 30px; height: 30px; 
+    cursor: pointer;
+}
+.youtube{
+    background: url(./jpg/mdi_youtube.png)no-repeat center;
+    background-size: 30px;
+    width: 30px; height: 30px; 
+    cursor: pointer;
+}
+.twitch{
+    background: url(./jpg/logos_twitch.png)no-repeat center;
+    background-size: 30px;
+    width: 30px; height: 30px; 
+    cursor: pointer;
+}
+.instagram{
+    background: url(./jpg/mdi_instagram.png)no-repeat center;
+    background-size: 30px;
+    width: 30px; height: 30px; 
+    cursor: pointer;
+    margin-right: 80px;
+}
+.logo2{
+    position: absolute;
+    width: 300px;height: 100px;
+    background: url(./jpg/Crimson\ Desert\ Logo.png)no-repeat center;
+    background-size: 300px;
+    left: 0;right: 0;margin: auto;
+    top: 110px;
+}
+
+.footer-text1{
+    position: absolute;
+    text-align: center;
+    font-size: 12px;
+    color: #bbb;
+    top: 230px;
+    left: 0;right: 0;margin: auto;
+}
+.csc{
+    width: 100%;
+    position: absolute;
+    top: 260px;
+}
+
+.csc ul{
+    text-align: center;
+    list-style: none;
+}
+.csc ul li{
+    display: inline-block;
+    color: white;
+    font-size: 12px;
+    margin-left: 20px;
+    color:#aaa;
+    cursor: pointer;
+}
+.csc ul li:hover{
+    color: #eee;
+}
+.CR{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    top: 300px;
+    background: url(./jpg/content_ratings.png)no-repeat center;
+    background-size: 100%;
+    width: 300px; height: 100px;
+}
+.footer-text2{
+    position: absolute;
+    font-size: 12px;
+    color: #bbb;
+    top: 410px;
+    text-align: center;
+    left: 0;right: 0;margin: auto;
+    font-family: sans-serif;
+}
+/* 작은화면 반응형 */
+
+@media screen and (max-width:768px){
+    .all-br{
+        width: 100%; height: 8000px;
+        overflow: hidden;
+    }
+    .all-br::after{
+        width: 100%;
+    }
+    
+    .logo1{
+        width: 20px;
+    }
+    .line{
+        background-size: 800px;
+        width: auto; height: 200px;
+        top: 0px;
+    }
+    .line h2{
+        padding-top: 70px;
+        font-size: 50px;
+        opacity: 0;
+
+    }
+    .line2{
+        background-size: 800px;
+        width: auto; height: 200px;
+        top: -400px;
+    }
+    .line2 h2{
+        padding-top: 60px;
+        font-size: 50px;
+        opacity: 0;
+        animation: lineAni 1s ease-in;
+    }
+    .line3{
+        background-size: 800px;
+        width: auto; height: 200px;
+        top: -400px;
+    }
+    .line3 h2{
+        padding-top: 60px;
+        font-size: 50px;
+        opacity: 0;
+        animation: lineAni 1s ease-in;
+    }
+    .line4{
+        background-size: 800px;
+        width: auto; height: 200px;
+        top: -100px;
+    }
+    .line4 h2{
+        padding-top: 60px;
+        font-size: 50px;
+        opacity: 0;
+        animation: lineAni 1s ease-in;
+    }
+    .main-topbar{
+        display: none;
+    }
+    
+    .main-topbar2{
+        position: fixed;
+        display: block;
+        width: 80vw; height: 70px;
+        left: 0;right: 0;margin: auto;
+        border-radius: 20px;
+        margin-top: 10px;
+        background-color: rgba(75, 75, 75, 0.5);
+        backdrop-filter: blur(10px);
+        z-index: 100;
+        overflow: hidden;
+    }
+    .main-topbar2 li{
+        list-style: none;
+    }
+    .menu{position: absolute;
+        background: url(./jpg/menu.png)no-repeat center;
+        background-size: 35px;
+        width: 100px; height: 100px;
+        top: -15px; left: 0px;
+        cursor: pointer;
+    }
+    .menu:hover{
+        background-color: rgba(255, 189, 113, 0.5);
     }
 
+    .user{
+        position: absolute;
+        background: url(./jpg/User.png)no-repeat center;
+        background-size: 35px;
+        width: 100px; height: 100px;
+        top: -15px; right: 0;
+        cursor: pointer;
+    }
+    .logo1{
+        position: absolute;
+        background: url(./jpg/Crimson\ Desert\ Logo.png)no-repeat center;
+        background-size: cover;
+        width: 150px; height: 50px;
+        top: 10px;
+        left: 0;right: 0;margin: auto;
+    }
+    .user:hover{
+        background-color: rgba(255, 189, 113, 0.5);
+    }
+    .main{
+        position: relative;
+        width: auto; height: 1080px;
+        overflow: hidden;
+    }
+    .main-img{
+        position: absolute;
+        background:linear-gradient(to bottom,rgba(0,0,0,.8),rgba(0,0,0,.5),rgba(0,0,0,.8),rgba(0,0,0,.8)), url(./jpg/Rectangle\ 1.jpg)no-repeat center;
+        background-size: 1000px;
+        width: 100%; height: 1080px;
+        bottom: 300px;
+        left: 0;right: 0;margin: auto;
+    }
+    .logo-box{
+        position: absolute;
+        background: url(./jpg/붉은사막.png)no-repeat center;
+        background-size: 1000px;
+        width: 100%; height: 300px;
+        animation: down 1s ease-in forwards;
+        opacity: 0;
+    }
+    @keyframes down {
+        from{
+            top: -500px;
+            opacity: 0;
+        }
+        50%{
+            top: 100px;
+            opacity: 0;
+        }
+        to{
+            top: 200px;
+            opacity: 1;
+        }
+    }
+    .gameplay-bg-r{
+        position: absolute;
+        left: 0;right: 0;margin: auto;
+        background: url(./jpg/붉-game-play-빛.png)no-repeat center;
+        background-size: 1000px;
+        width: 100%;height: 450px;
+        top: 340px;
+        display: none;
+        animation: 투명 1s ease-in forwards;
+        opacity: 0;
+    }
+    .gameplay-bg{
+        position: absolute;
+        top: 340px;
+        left: 0;right: 0;margin: auto;
+        background: url(./jpg/붉-game-play.png)no-repeat center ;
+        background-size: 1000px;
+        width: 100%;height: 450px;
+        opacity: 0;
+        animation: 투명 1s ease-in forwards;
+    
+    }
+    .play-text{
+        position: absolute;
+        color: rgb(223, 180, 100);
+        z-index: 1;
+        left: 0; right: 0; margin: auto;
+        top: 500px;
+        width: 300px; height: 70px;
+        background: none;
+        padding: 20px 20px;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 700;
+        cursor: pointer;
+        border: none;
+        animation: 투명 1s ease-in forwards;
+        opacity: 0;
+        
+    }
+    @keyframes 투명 {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: .8;
+        }
+    }
+    .main-br{
+        position: absolute;
+        background: linear-gradient(to top, rgba(0,0,0,0),rgba(0,0,0,.5),#000,rgba(0,0,0,.5),rgba(0,0,0,0));
+        width: 100%; height: 300px;
+        top: 630px;
+    }
+    .main2{
+        width: auto; height: 1400px;
+        left: 0; right: 0; margin: auto;
+        overflow: hidden;
+    }
+    
+    .story-box{
+        position: relative;
+        width: 100%; height: 700px;
+        background: url(./jpg/붉은사막\ 스토리이미지배경.jpg)no-repeat center;
+        background-size: 480px;
+        opacity: 0;
+        left: 0;right: 0;margin: auto;
+        animation: topSlide 1s ease-in;
+        overflow: hidden;
+    }
+    .story-text-box{
+        position: absolute;
+        background: url(./jpg/문양1.png)no-repeat center;
+        background-size:1500px;
+        width: 500px; height: 700px;
+        top: 1500px;
+        left: -63px;right: 0;margin: auto;
+        color: rgb(155, 155, 155);
+    }
+    .story-T{
+        width: 300px;height: 500px;
+        position: absolute;
+        top: 270px; left: 150px;
+    }
+    @keyframes topSlide {
+        from{
+            top: 0px;
+            opacity: 0;
+        }
+        to{
+            top: -100px;
+            opacity: 1;
+        }
+    }
+    @keyframes topSlideDisappear {
+        from{
+            top: -100px;
+            opacity: 1;
+        }
+        to{
+            top: 0px;
+            opacity: 0;
+        }
+    }
+    @keyframes topSlideDisappear2 {
+        from{
+            top: -100px;
+            opacity: 1;
+        }
+        to{
+            top: 0px;
+            opacity: 0;
+        }
+    }
+    .story-character{
+        position: absolute;
+        width: 500px; height: 1000px;
+        background: url(./jpg/붉은사막\ 스토리캐릭터.png)no-repeat center;
+        background-size: 500px;
+        left: 200px;right: 0;margin: auto;
+        animation: leftSlide 1s ease-in;
+        opacity: 0;
+    }
+    @keyframes leftSlide {
+        from{
+            left: -50px;
+            top: -100px;
+            opacity: 0;
+        }
+        to{
+            left: -50px;
+            top: -150px;
+            opacity: 1;
+        }
+    }
+    @keyframes leftSlideDisappear {
+        from{
+            left: -400px;
+            top: -150px;
+            opacity: 1;
+        }
+        to{
+            left: -450px;
+            top: -100px;
+            opacity: 0;
+        }
+    }
+    .story-text{
+        position: absolute;
+        border-bottom: 3px inset rgb(224, 164, 51);
+        border-top: 3px inset rgb(224, 164, 51) ;
+        box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 5px;
+        width: 200px; height: 100px;
+        color: rgb(218, 218, 218);
+        padding-left: 20px;
+        top: 850px;
+        left: 0;right: 0;margin: auto;
+        font-size: 15px;
+        opacity: .9;
+        padding-top: 20px;
+        background-color: rgba(0, 0, 0,.5);
+        backdrop-filter: blur(5px);
+        animation: rightSlide 1s ease-in;
+        cursor: pointer;
+    }
+    @keyframes rightSlide {
+        from{
+            left: 360px;
+            top: 400px;
+            opacity: 0;
+        }
+        to{
+            left: 315px;
+            top: 400px;
+            opacity: .9;
+        }
+    }
+    @keyframes rightSlideDisappear {
+        from{
+            left: 600px;
+            top: 470px;
+            opacity: .9;
+        }
+        to{
+            left: 650px;
+            top: 480px;
+            opacity: 0;
+        }
+    }
+    
+    .main3{
+        position: relative;
+        width: auto; height: 1200px;
+        overflow: hidden;
+        top: -300px;
+        left: 0;right: 0;margin: auto;
+    }
+    .main3-box1{
+        position: absolute;
+        overflow: hidden;
+        width: 100%; height: 30vh;
+        background: linear-gradient(to right,rgba(153, 184, 184, 0),rgba(139, 189, 192, 0.5),rgba(162, 199, 211, 0.8),rgb(157, 227, 255));
+        background-size: cover;
+        animation: opacityAni 1s ease-in;
+        opacity: 0;
+    }
+    @keyframes opacityAni {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    @keyframes opacityAniDisappear {
+        from{
+            opacity: 1;
+        }
+        to{
+            opacity: 0;
+        }
+    }
+    .mouseover{
+        position: absolute;
+        width: 100%; height: 30vh;
+    }
+    
+    .sky1{
+        position: absolute;
+        width: 100%; height: 30vh;
+        left: 20%;
+        background: url(./jpg/구름1.png)no-repeat center;
+        background-size: cover;
+        transition: all 3.5s;
+    }
+    .sky2{
+        position: absolute;
+        width: 100%; height: 30vh;
+        left: 20%;
+        background: url(./jpg/구름2.png)no-repeat center;
+        background-size: cover;
+        transition: all 2s;
+    }
+    
+    .sky3{
+        position: absolute;
+        width: 100%; height: 30vh;
+        right: 20%;
+        background: url(./jpg/구름3.png)no-repeat center;
+        background-size: cover;
+        transition: all 3s;
+        opacity: .2;
+    }
+    .dragon{
+        position: absolute;
+        background: url(./jpg/dragon.png)no-repeat center;
+        background-size: 500px;
+        width: 100%; height: 30vh;
+        left: 50%;
+        top: -15px;
+        transition: all 2.5s;
+    }
+    .dragon-text{
+        color: #dbdbdb;
+        position: absolute;
+        top: 180px;
+        left: 0;right: 0;margin: auto;
+        width: 100%;height: 100px;
+        font-size: 17px;
+        text-align: center;
+        backdrop-filter: blur(5px);
+        background-color: rgba(0, 0, 0, 0.5);
+        border-top: #ff8c2e 3px inset;
+        border-bottom: #ff8c2e 3px inset;
+        cursor: pointer;
+    }
+    .main3-box2{
+        position: absolute;
+        width: auto; height: 30vh;
+        top: 290px;
+        left: 0;right: 0;margin: auto;
+        background: linear-gradient(to right,rgba(64, 64, 65, 0),rgba(98, 116, 117, 0.5),rgba(162, 199, 211, 0.8),rgb(157, 227, 255));
+        background-size: cover;
+        animation: opacityAni2 1s ease-in;
+        opacity: 0;
+        overflow: hidden;
+    }
+    .bg1{
+        position: absolute;
+        background:linear-gradient(to left,rgba(0,0,0,1),rgba(0,0,0,1),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0)), url(./jpg/붉은사막-생활.jpg)no-repeat center;
+        background-size: 1000px;
+        width: 100%; height: 30vh;
+        top: 0px;
+        transition: all 3s ease-in-out;
+    }
+    .bg1:hover{
+        width: 100vw; height: 100vh;
+        top: -500px;
+        transition: all 3s ease-in-out;
+    }
+    .bg1-text{
+        color: #dbdbdb;
+        position: absolute;
+        top: 180px;
+        left: 0;right: 0;margin: auto;
+        width: auto;height: 100px;
+        font-size: 17px;
+        text-align: center;
+        backdrop-filter: blur(5px);
+        background-color: rgba(0, 0, 0, 0.5);
+        border-top: #ff8c2e 5px inset;
+        border-bottom: #ff8c2e 5px inset;
+        cursor: pointer;
+    }
+    @keyframes opacityAni2 {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    @keyframes opacityAni2Disappear {
+        from{
+            opacity: 1;
+        }
+        to{
+            opacity: 0;
+        }
+    }
+    .main3-box3{
+        position: absolute;
+        width: auto; height: 30vh;
+        top: 580px;
+        left: 0;right: 0;margin: auto;
+        background-color: aliceblue;
+        opacity: 1;
+        overflow: hidden;
+    }
+    .bg2{
+        position: absolute;
+        background: url(./jpg/넓은세계.jpg)no-repeat center;
+        background-size: 1500px;
+        width: 100%; height: 30vh;
+        top: 0px;
+        transition: all 3s ease-in-out;
+    }
+    .bg2:hover{
+        width: 100%; height: 100vh;
+        top: -100px;
+        transition: all 3s ease-in-out;
+    }
+    .bg2-text{
+        color: #dbdbdb;
+        position: absolute;
+        top: 180px;
+        left: 0;right: 0;margin: auto;
+        width: auto;height: 100px;
+        font-size: 17px;
+        text-align: center;
+        backdrop-filter: blur(5px);
+        background-color: rgba(0, 0, 0, 0.5);
+        border-top: #ff8c2e 5px inset;
+        border-bottom: #ff8c2e 5px inset;
+        cursor: pointer;
+    }
+    .main4-box{
+        height: 1500px;
+    }
+    .news1{
+        display: block;
+        width: 99vw;
+        background-size: 1000px;
+        left: 0;right: 0;margin: auto;
+    
+    }
+    .news2{
+        display: block;
+        width: 99vw;
+        background-size: 1000px;
+        left: 0;right: 0;margin: auto;
+    }
+    .left-box2{
+        margin-top: 300px;
+    }
+    .news3{
+        display: block;
+        width: 99vw;
+        background-size: 1000px;
+        left: 0;right: 0;margin: auto;
+    }
+    .news4{
+        display: block;
+        width: 99vw;
+        background-size: 1000px;
+        left: 0;right: 0;margin: auto;
+    }
+    .img-box5{
+        display: none;
+    }
+    .img-box10{
+        display: none;
+    }
+    /* footer */
+    .main-footer{
+        position: relative;
+        width: 100%;height: 500px;
+        background-color: #333;
+    }
+    .social-box{
+        position: absolute;
+        width: 100%;
+        height: 90px;
+        background-color: #000;
+    }
+    .social-box ul{
+        text-align: center;
+        list-style: none;
+    
+    }
+    .social-box ul li{
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .social-box ul li button{
+        background: none;
+        border: none;
+    }
+    
+    .twitter{
+        background: url(./jpg/mdi_twitter.png)no-repeat center;
+        background-size: 30px;
+        width: 30px; height: 30px; 
+        cursor: pointer;
+    }
+    .youtube{
+        background: url(./jpg/mdi_youtube.png)no-repeat center;
+        background-size: 30px;
+        width: 30px; height: 30px; 
+        cursor: pointer;
+    }
+    .twitch{
+        background: url(./jpg/logos_twitch.png)no-repeat center;
+        background-size: 30px;
+        width: 30px; height: 30px; 
+        cursor: pointer;
+    }
+    .instagram{
+        background: url(./jpg/mdi_instagram.png)no-repeat center;
+        background-size: 30px;
+        width: 30px; height: 30px; 
+        cursor: pointer;
+        margin-right: 80px;
+    }
+    .logo2{
+        position: absolute;
+        width: 300px;height: 100px;
+        background: url(./jpg/Crimson\ Desert\ Logo.png)no-repeat center;
+        background-size: 300px;
+        left: 0;right: 0;margin: auto;
+        top: 110px;
+    }
+    
+    .footer-text1{
+        position: absolute;
+        text-align: center;
+        font-size: 12px;
+        color: #bbb;
+        top: 230px;
+        left: 0;right: 0;margin: auto;
+    }
+    .csc{
+        width: 100%;
+        position: absolute;
+        top: 260px;
+        z-index: 1;
+    }
+    
+    .csc ul{
+        text-align: center;
+        list-style: none;
+    }
+    .csc ul li{
+        display: inline-block;
+        color: white;
+        font-size: 12px;
+        margin-left: 20px;
+        color:#aaa;
+        cursor: pointer;
+    }
+    .csc ul li:hover{
+        color: #eee;
+    }
+    .CR{
+        position: absolute;
+        left: 0;right: 0;margin: auto;
+        top: 300px;
+        background: url(./jpg/content_ratings.png)no-repeat center;
+        background-size: 100%;
+        width: 300px; height: 100px;
+    }
+    .footer-text2{
+        position: absolute;
+        font-size: 12px;
+        color: #bbb;
+        top: 410px;
+        text-align: center;
+        left: 0;right: 0;margin: auto;
+        font-family: sans-serif;
+    }
+    .last-box{
+        top: 500px;
+    }
+    .last-box h1{
+        padding-top: 250px;
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+    }
 }
-
-.after{
-    position: fixed;
-    top: 0; 
-    width: 100%; height: 100%;
-    background-color: white;
-    opacity: 0;
-    z-index: 0;
-    transition: all 3s;
-}
-
