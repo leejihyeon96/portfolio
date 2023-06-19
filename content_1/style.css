@@ -1,0 +1,1700 @@
+body{
+    margin: 0;
+    padding: 0.1px;
+}
+div{
+    box-sizing: border-box;
+}
+html{
+    line-height: 1.15;
+}
+/* 공용 애니메이션 모음 */
+@keyframes upani {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes opacityani {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes leftslideani {
+    0%{
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes rightslideani {
+    0%{
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* 전체 배경색 */
+.main-bg{
+    width: 100%;height: 17500px;
+    background-color: #000000;
+    overflow: hidden;
+    z-index: -10;
+}
+/* 시작 애니메이션 박스 */
+.ani-box{
+    position: relative;
+    width: 1920px;height: 1000px;
+    overflow: hidden;
+    background-color: #000;
+    left: 0;right: 0;margin: auto;
+}
+/* 왼쪽 박스 */
+.text-r{
+    position: absolute;
+    left: -75px;
+    bottom: 200px;
+    color: rgb(245, 67, 67);
+    font-size: 120px;
+}
+.ani-left{
+    position: absolute;
+    width: 500px;height: 1000px;
+    background-color: #111;
+    transform: translateX(-2000px);
+    animation: leftani 1s ease-in-out forwards;
+    color: white;
+    overflow: hidden;
+    z-index: 1;
+    left: 0;right: 0;margin: auto;
+}
+@keyframes leftani {
+    100%{
+        transform: translateX(670px);
+        box-shadow: rgba(0,0,0,.3) -20px 0 10px;
+    }
+}
+/* 위쪽 박스 */
+.text-esigner-bottom{
+    position: absolute;
+    left: 470px;
+    bottom: 200px;
+    color: rgb(159, 171, 221);
+    font-size: 120px;
+}
+.ani-top{
+    position: absolute;
+    width: 2000px;height: 500px;
+    background-color: #111;
+    transform: translateY(-1000px);
+    animation: topani 2s .3s ease-in-out forwards;
+    overflow: hidden;
+    z-index: 1;
+    left: 0;right: 0;margin: auto;
+}
+@keyframes topani {
+    50%{
+        
+        transform: translateY(500px);
+    }
+    70%{
+        
+        transform: translateY(500px);
+        box-shadow: none;
+    }
+    100%{
+        box-shadow: rgba(0,0,0,.8) 0 -50px 20px;
+        transform: translateY(500px);
+    }
+}
+/* 오른쪽 박스 */
+.text-de{
+    position: absolute;
+    right: -50px;
+    bottom: 200px;
+    color:rgb(216, 219, 255);
+    font-size: 120px;
+}
+.ani-right{
+    position: absolute;
+    width: 550px;height: 1000px;
+    background-color: #000;
+    transform: translateX(2000px);
+    animation: rightani 1s 1s ease-in-out forwards;
+    z-index: 2;
+    overflow: hidden;
+    left: 0;right: 10px;margin: auto;
+}
+.right-inset-shadow{
+    position: absolute;
+    right: -20px;
+    width: 20px;height: 100%;
+    background-color: rgba(0,0,0,.9);
+    box-shadow: rgba(0,0,0,.9) -10px 0 20px;
+}
+@keyframes rightani {
+    100%{
+        transform: translateX(-680px);
+    }
+}
+/* 바닥쪽 박스 */
+.text-esigner-top{
+    position: absolute;
+    left: 470px;
+    bottom: -300px;
+    color: rgb(83, 186, 245);
+    font-size: 120px;
+}
+.ani-bottom{
+    position: absolute;
+    width: 2000px;height: 500px;
+    background-color: #000;
+    transform: translateY(1000px);
+    animation: bottomani 1.8s 1.2s ease-in-out forwards;
+    overflow: hidden;
+    left: 0;right: 0;margin: auto;
+}
+@keyframes bottomani {
+    50%{
+        transform: translateY(-0px);
+    }
+    100%{
+        transform: translateY(-0px);
+    }
+}
+/* 애니박스 2번 */
+.ani-box2{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    width: 100%;height: 1000px;
+    background-color: #111;
+    z-index: 10;
+    animation: leftani2 1s 2.7s ease-in-out forwards;
+    transform: translateX(-100%);
+    opacity: .5;
+    backdrop-filter: blur(10px);
+}
+@keyframes leftani2 {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+/* 애니박스 3번 */
+.ani-box3{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    width: 100%;height: 1000px;
+    background-color: #333;
+    z-index: 10;
+    animation: leftani2 1s 2.9s ease-in-out forwards;
+    transform: translateX(-100%);
+    opacity: .7;
+    backdrop-filter: blur(10px);
+}
+/* 애니박스 4번 */
+.ani-box4{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    width: 100%;height: 1000px;
+    background-color: #000;
+    z-index: 10;
+    animation: leftani2 1s 3.1s ease-in-out forwards;
+    transform: translateX(-100%);
+    opacity: 1;
+    backdrop-filter: blur(100px);
+}
+.display{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    top: 200px;
+    width: 1220px;height: 600px;
+    background: linear-gradient(to top right, rgba(78, 78, 78, 0.5), rgba(102, 102, 102, 0.5), rgba(99, 99, 99, 0.5), rgba(70, 70, 70, 0.5), rgba(32, 32, 32, 0.5)),linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(121, 121, 121, 0.5), rgba(75, 75, 75, 0.5), rgba(48, 48, 48, 0.5), rgba(12, 12, 12, 0.5)),linear-gradient(to top left, rgba(20, 20, 20, 0.5), rgba(110, 110, 110, 0.5), rgba(83, 83, 83, 0.5), rgba(51, 51, 51, 0.5), rgba(14, 14, 14, 0.5));
+    box-shadow: inset rgba(0, 0, 0, 0.8) 0 0 20px 5px, rgba(83, 83, 83, 0.5) 0 0 10px 20px ,inset rgba(56, 56, 56, 0.5) 0 0 10px 20px,inset rgba(37, 37, 37, 0.3) 0 0 10px 30px,inset rgba(51, 51, 51, 0.3) 0 0 10px 35px;
+    opacity: 0;
+    animation: displayani 1s 4.5s linear forwards;
+}
+@keyframes displayani {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    60%{
+        opacity: 1;
+    }
+    68%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 0;
+    }
+    72%{
+        opacity: 1;
+    }
+    74%{
+        opacity: 0;
+    }
+    76%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.display2{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    top: 200px;
+    width: 1220px;height: 600px;
+    background-color: #000;
+    animation: displayani2 .3s 6s linear forwards;
+    opacity: 0;
+}
+@keyframes displayani2 {
+    0%{
+        opacity: 1;
+        box-shadow: #000 0 0 20px 10px;
+        border-radius: 50%;
+        transform: scaleY(0);
+    }
+    100%{
+        opacity: 1;
+        box-shadow: #000 0 0 30px 10px;
+        border-radius: 0%;
+        transform: scaleY(1);
+    }
+}
+.display2_2{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    top: 200px;
+    width: 1220px;height: 600px;
+    background-color: #000;
+    animation: displayani3 .3s 6s linear forwards;
+    opacity: 0;
+}
+@keyframes displayani3 {
+    0%{
+        opacity: 1;
+        box-shadow: #000 0 0 20px 10px;
+        border-radius: 50%;
+        transform: scaleX(0);
+    }
+    100%{
+        opacity: 1;
+        box-shadow: #000 0 0 30px 10px;
+        border-radius: 0%;
+        transform: scaleX(1);
+    }
+}
+/* 애니박스 5번 */
+.ani-box5{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    width: 100%;height: 1000px;
+    z-index: 10;
+}
+.loading{
+    position: absolute;
+    width: 70px;height: 70px;
+    left: 0;right: 0;margin: auto;
+    top: 0;bottom: 0;
+    border-radius: 50%;
+    border-top: rgba(0, 0, 0, 0) solid 5px;
+    border-left: rgba(0, 0, 0, 0) solid 5px;
+    border-right: rgba(0, 0, 0, 0) solid 5px;
+    border-bottom: rgba(255, 255, 255, 1) solid 5px;
+    opacity: 0;
+    animation: loadingani 0.3s 5.1s linear calc(3) forwards;
+}
+@keyframes loadingani {
+    0%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(180deg);
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+/* 애니박스 6번 */
+.ani-box6{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    top: 730px;
+    width: 1450px;height: 300px;
+    background: linear-gradient(to top,rgba(0,0,0,.2),rgba(150,150,150,.2),rgba(255,255,255,.1));
+    z-index: 10;
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateX(70deg);
+    animation: displayon 1s 4.5s ease-in forwards;
+    opacity: 0;
+}
+@keyframes displayon {
+    100%{
+        opacity: 1;
+    }
+}
+/* 스킬박스 on,off */
+.sills-box-onoff{
+    display: none;
+}
+
+/* SKILLS BOX */
+.skills-box{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    top: 200px;
+    width: 1200px;height: 600px;
+    z-index: 10;
+    overflow: hidden;
+}
+/* 스킬박스 왼쪽 투명도 박스 */
+.skill-box-opacity{
+    position: absolute;
+    left: 0;right: 1100px;margin: auto;
+    top: 200px;
+    width: 100px;height: 600px;
+    background: linear-gradient(to right,rgba(0, 0, 0, .8),rgba(0,0,0,.2),rgba(0,0,0,0));
+    z-index: 10;
+}
+/* 스킬 박스 설정 */
+/* 스킬박스 1 */
+.skill1{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    top: 100px;
+    width: 1200px;height: 100px;
+    z-index: 10;
+    background-color: white;
+    -webkit-box-reflect:below -55px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.7)) ;
+    animation: transani 3s ease-in-out forwards;
+    opacity: 0;
+}
+@keyframes transani {
+    0%{
+        opacity: 0;
+        transform: translateX(-1200px);
+    }
+    70%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100%{
+        opacity: .9;
+        transform: translateX(-750px);
+    }
+}
+/* 스킬박스 1 데코 */
+.skill1-deco{
+    position: absolute;
+    right: 0;
+    width: 20px;height: 100px;
+    background-color: #333;
+    box-shadow: #333 0 0 5px;
+}
+/* 스킬박스 2 */
+.skill2{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    top: 230px;
+    width: 1200px;height: 50px;
+    z-index: 10;
+    background-color: white;
+    -webkit-box-reflect:below -25px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.7)) ;
+    animation: transani2 3s .1s ease-in-out forwards;
+    opacity: 0;
+}
+@keyframes transani2 {
+    0%{
+        opacity: 0;
+        transform: translateX(-1200px);
+    }
+    70%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100%{
+        opacity: .6;
+        transform: translateX(-800px);
+    }
+}
+/* 스킬박스 2 데코 */
+.skill2-deco{
+    position: absolute;
+    right: 0;
+    width: 20px;height: 50px;
+    background-color: #4cc1ed;
+    box-shadow: #4cc1ed 0 0 5px;
+}
+/* 스킬박스 3 */
+.skill3{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    top: 300px;
+    width: 1200px;height: 50px;
+    z-index: 10;
+    background-color: white;
+    -webkit-box-reflect:below -25px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.7)) ;
+    animation: transani3 3s .2s ease-in-out forwards;
+    opacity: 0;
+}
+@keyframes transani3 {
+    0%{
+        opacity: 0;
+        transform: translateX(-1200px);
+    }
+    70%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100%{
+        opacity: .7;
+        transform: translateX(-780px);
+    }
+}
+/* 스킬박스 3 데코 */
+.skill3-deco{
+    position: absolute;
+    right: 0;
+    width: 20px;height: 50px;
+    background-color: #f39227;
+    box-shadow: #f39227 0 0 5px;
+}
+/* 스킬박스 4 */
+.skill4{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    top: 370px;
+    width: 1200px;height: 50px;
+    z-index: 10;
+    background-color: white;
+    -webkit-box-reflect:below -25px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.7)) ;
+    animation: transani4 3s .3s ease-in-out forwards;
+    opacity: 0;
+}
+@keyframes transani4 {
+    0%{
+        opacity: 0;
+        transform: translateX(-1200px);
+    }
+    70%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100%{
+        opacity: .8;
+        transform: translateX(-760px);
+    }
+}
+/* 스킬박스 4 데코 */
+.skill4-deco{
+    position: absolute;
+    right: 0;
+    width: 20px;height: 50px;
+    background-color: #ccc;
+    box-shadow: #ccc 0 0 5px;
+}
+/* 스킬박스 5 */
+.skill5{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    top: 440px;
+    width: 1200px;height: 50px;
+    z-index: 10;
+    background-color: white;
+    -webkit-box-reflect:below -25px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.7)) ;
+    animation: transani5 3s .4s ease-in-out forwards;
+    opacity: 0;
+}
+@keyframes transani5 {
+    0%{
+        opacity: 0;
+        transform: translateX(-1200px);
+    }
+    70%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100%{
+        opacity: .9;
+        transform: translateX(-710px);
+    }
+}
+/* 스킬박스 5 데코 */
+.skill5-deco{
+    position: absolute;
+    right: 0;
+    width: 20px;height: 50px;
+    background-color: #27b3b4;
+    box-shadow: #27b3b4 0 0 5px;
+}
+/* 스킬박스 6 */
+.skill6{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    top: 510px;
+    width: 1200px;height: 50px;
+    z-index: 10;
+    background-color: white;
+    -webkit-box-reflect:below -25px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.7)) ;
+    animation: transani6 3s .5s ease-in-out forwards;
+    opacity: 0;
+}
+@keyframes transani6 {
+    0%{
+        opacity: 0;
+        transform: translateX(-1200px);
+    }
+    70%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(-820px);
+    }
+}
+/* 스킬박스 6 데코 */
+.skill6-deco{
+    position: absolute;
+    right: 0;
+    width: 20px;height: 50px;
+    background-color: #ea77ff;
+    box-shadow: #ea77ff 0 0 5px;
+}
+/* skills-text-box */
+.skills-text-box{
+    position: absolute;
+    top: 280px;
+    left: 0;right: 0;margin: auto;
+    text-align: center;
+    z-index: 10;
+    font-size: 23px;
+    color: white;
+}
+.skills-text-box h2{
+    -webkit-box-reflect:below -5px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.3)) ;
+}
+.skills-text-box h1{
+    -webkit-box-reflect:below 15px linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3)) ;
+    line-height: .5;
+}
+/* sills-text-opacity-ani */
+.skill-text1{
+    text-shadow: white 0 0 10px;
+    opacity: 0;
+    animation: opacity1 2s 2s linear forwards;
+}
+.skill-text2{
+    opacity: 0;
+    animation: opacity1 2s 2.2s linear forwards;
+}
+.skill-text3{
+    opacity: 0;
+    animation: opacity1 2s 2.4s linear forwards;
+}
+.skill-text4{
+    opacity: 0;
+    animation: opacity1 2s 2.6s linear forwards;
+}
+.skill-text5{
+    text-shadow: #27b3b4 0 0 10px;
+    color: #27b3b4;
+    opacity: 0;
+    animation: opacity1 2s 2.8s linear forwards;
+}
+.skill-text6{
+    opacity: 0;
+    animation: opacity1 2s 3s linear forwards;
+}
+
+@keyframes opacity1 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* X 버튼 = 증명사진 으로 뒤돌아감 */
+.btn-x{
+    position: absolute;
+    left: 1100px;right: 0;margin: auto;
+    top: 230px;
+    width: 35px;height: 35px;
+    border-radius: 50%;
+    border: white 3px solid;
+    z-index: 10;
+    opacity: .5;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    line-height: 0;
+    background: none;
+}
+.btn-x h3{
+    position: absolute;
+    top: -4px;
+    left: 8px;
+    transform: scaleY(1.5);
+}
+.btn-x:hover{
+    opacity: .8;
+}
+.btn-x:active{
+    opacity: .2;
+}
+/* 증명사진 및 이름 애니메이션 */
+/* 이름 박스 디스플레이 설정 */
+.name-box-onoff{
+    display: none;
+}
+/* 이름 박스 애니메이션 설정 */
+.name-box{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    top: 200px;
+    width: 1200px;height: 600px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.name1{
+    position: absolute;
+    width: 1200px;height: 100px;
+    background-color: rgba(255,255,255,.7);
+    transform: rotate(45deg)
+               translate(-1000px,500px);
+    animation: nameani1 2s ease-in-out forwards;
+    opacity: 0;
+}
+@keyframes nameani1 {
+    0%{
+        opacity: 0;
+        transform:rotate(45deg) 
+        translate(-1000px,700px);
+    }
+    100%{
+        opacity: 1;
+        transform:rotate(45deg) 
+        translate(0,700px);
+    }
+}
+.name2{
+    position: absolute;
+    width: 1200px;height: 100px;
+    background-color: rgba(255,255,255,.8);
+    transform: rotate(45deg)
+               translate(-1000px,500px);
+    animation: nameani2 2s .2s ease-in-out forwards;
+    opacity: 0;
+}
+@keyframes nameani2 {
+    0%{
+        opacity: 0;
+        transform:rotate(45deg) 
+        translate(-1000px,590px);
+    }
+    100%{
+        opacity: 1;
+        transform:rotate(45deg) 
+        translate(450px,590px);
+    }
+}
+.name3{
+    position: absolute;
+    width: 1200px;height: 100px;
+    background-color: rgba(255,255,255,.9);
+    transform: rotate(45deg)
+               translate(-1000px,500px);
+    animation: nameani3 2s .4s ease-in-out forwards;
+    opacity: 0;
+}
+@keyframes nameani3 {
+    0%{
+        opacity: 0;
+        transform:rotate(45deg) 
+        translate(-1000px,480px);
+    }
+    100%{
+        opacity: 1;
+        transform:rotate(45deg) 
+        translate(250px,480px);
+    }
+}
+/* 이지현 텍스트 */
+.leejihyeon{
+    position: absolute;
+    padding-left: 150px;
+    top:-115px;
+    font-size: 70px;
+    color: white;
+    opacity: 0;
+    animation: lee1 3s ease-in-out forwards;
+}
+@keyframes lee1 {
+    0%{
+        transform: translateX(2500px);
+        opacity: 0;
+    }
+    100%{
+        text-shadow: #000 0 0 5px;
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+/* 증명사진 */
+.leejihyeon_img{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    top: 100px;
+    z-index: -1;
+    background: url(../jpg/증명사진.png)no-repeat center;
+    background-size: cover;
+    width: 400px;height: 500px;
+    opacity: 0;
+    animation: lee2 3s ease-in-out forwards;
+}
+@keyframes lee2 {
+    0%{
+        opacity: 0;
+        transform: translateX(-1000px);
+    }
+    70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+/* 이름 뒷배경 */
+.name-bg{
+    position: absolute;
+    left: 100px;right: 0;margin: auto;
+    top: 200px;
+    width: 1100px;height: 600px;
+    background: linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0),rgba(255,255,255,.5),rgba(255,255,255,.8));
+    z-index: 10;
+    opacity: 0;
+    animation: btn1 1s 2s linear forwards;
+}
+/* 증명사진 애니 후 스킬 버튼 */
+.skill-button{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    width: 300px;height: 100px;
+    top: 810px;
+    border:  5px white solid;
+    color: white;
+    z-index: 10;
+    text-align: center;
+    line-height: .3;
+    cursor: pointer;
+    transition: all .1s;
+    opacity: 0;
+    animation: btn1 1s 3s linear forwards;
+}
+@keyframes btn1 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.skill-button:hover{
+    box-shadow: rgba(255,255,255,.8) 0 0 5px 5px;
+    text-shadow: rgba(255,255,255,.8) 0 0 5px;
+    transition: all .1s;
+    width: 310px;height: 110px;
+    top: 805px;
+    line-height: .5;
+}
+.skill-button:active{
+    border: #000 5px solid;
+    box-shadow: rgba(0, 0, 0, 0.8) 0 0 5px 5px;
+    color: #000;
+    transition: all .1s;
+}
+/* 소개 애니메이션 박스 */
+    /* 전체 박스 */
+.main-box1{
+    position: relative;
+    width: 100%;height: 1000px;
+    box-shadow: #000 0 -10px 10px;
+    background-color: #000;
+    overflow: hidden;
+    z-index: 2;
+}
+/* 포스터 박스 */
+.main-box2{
+    position: relative;
+    left: 0;right: 0;margin: auto;
+    width: 100%;height: 2300px;
+    background-color: #000;
+    z-index: 1;
+}
+.main-box2-text{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    opacity: 0;
+    z-index: 1;
+}
+.main-box2-text-deco{
+    position: absolute;
+    left: 46.2px;right: 0;margin: auto;
+    top: 95px;
+    width: 8.5px; height: 55px;
+    background-color: white;
+}
+.main-box2-bg{
+    position: relative;
+    top: 150px;
+    width: 100%;height: 2300px;
+    background: linear-gradient(to top,#ddd,#eee,#fff,#eee,#ddd,#ccc,#bbb,#aaa,#999,#888);
+    left: 0;right: 0;margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
+}
+/* 포스터 박스 설명 글 */
+.main-box2-top-text{
+    position: absolute;
+    left: 0;right: 1080px;margin: auto;
+    top: 50px;
+    width: 500px;height: 300px;
+    color: white;
+    opacity: 0;
+}
+.main-box2-top-text h1{
+    font-size: 40px;
+    -webkit-box-reflect: below 0px linear-gradient(to top,rgba(200,200,200,.5),rgba(255,255,255,.1),rgba(255,255,255,0));
+}
+
+.main-box2-top-text p{
+    font-weight: 700;
+    opacity: .6;
+    -webkit-box-reflect: below 0px linear-gradient(to top,rgba(200,200,200,.5),rgba(255,255,255,.1),rgba(255,255,255,0));
+    font-size: 20px;
+    color: #4b4b4b;
+}
+/* photoshop-logo */
+.photoshop-logo{
+    position: absolute;
+    top: 30px; left: 300px;right: 0;margin: auto;
+    width: 200px;height: 200px;
+    background: url(../jpg/포토샵\ 로고.png)no-repeat center;
+    background-size: cover;
+}
+/* illustrator-logo */
+.illustrator-logo{
+    position: absolute;
+    top: 100px; left: 260px;right: 0;margin: auto;
+    width: 200px;height: 200px;
+    background: url(../jpg/어도비\ 일러스트.png)no-repeat center;
+    background-size: cover;
+}
+/* 포스터 박스 1 */
+.poster-box1{
+    position: absolute;
+    display: flex;
+    left: 0;right: 0;margin: auto;
+    width: 100%;height: 500px;
+    top: 400px;
+    -webkit-box-reflect: below 5px linear-gradient(to top,rgba(200,200,200,.5),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0));
+    font-weight: 600;
+    opacity: 0;
+}
+.poster-box1 p{
+    padding-top: 512px;
+    -webkit-box-reflect: below 5px linear-gradient(to top,rgba(200,200,200,.2),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0));
+}
+/* 포스터1 */
+.poster1{
+    width: 350px;height: 500px;
+    background: url(../jpg/선크림\ 포스터.jpg)no-repeat center;
+    background-size: cover;
+    left: 0;right: 0;margin: auto;
+    margin-right: 100px;
+    text-align: center;
+}
+.poster1-text{
+    position: absolute;
+    left: 0;right: 1400px;margin: auto;
+    top: 520px;
+    width: 10px;height: 30px;
+    background-color: #4cc1ed;
+    -webkit-box-reflect: below 2px linear-gradient(to top,rgba(200,200,200,.5),rgba(255,255,255,.3),rgba(255,255,255,0.1),rgba(255,255,255,0));
+}
+/* 포스터2 */
+.poster2{
+    width: 350px;height: 500px;
+    background: url(../jpg/팥빙수\ 포스터.jpg)no-repeat center;
+    background-size: cover;
+    left: 0;right: 0;margin: auto;
+    text-align: center;
+}
+.poster2-text{
+    position: absolute;
+    left: 0;right: 210px;margin: auto;
+    top: 520px;
+    width: 10px;height: 30px;
+    background-color: #d3c690;
+    -webkit-box-reflect: below 2px linear-gradient(to top,rgba(200,200,200,.5),rgba(255,255,255,.3),rgba(255,255,255,0.1),rgba(255,255,255,0));
+}
+/* 포스터3 */
+.poster3{
+    width: 350px;height: 500px;
+    background: url(../jpg/햄버거\ 포스터.jpg)no-repeat center;
+    background-size: cover;
+    left: 0;right: 0;margin: auto;
+    margin-left: 100px;
+    text-align: center;
+}
+.poster3-text{
+    position: absolute;
+    left: 1000px;right: 0;margin: auto;
+    top: 520px;
+    width: 10px;height: 30px;
+    background-color: #f29b30;
+    -webkit-box-reflect: below 2px linear-gradient(to top,rgba(200,200,200,.5),rgba(255,255,255,.3),rgba(255,255,255,0.1),rgba(255,255,255,0));
+}
+/* 포스터 박스 2 */
+.poster-box2{
+    position: absolute;
+    display: flex;
+    left: 0;right: 0;margin: auto;
+    width: 100%;height: 500px;
+    top: 1100px;
+    -webkit-box-reflect: below 5px linear-gradient(to top,rgba(200,200,200,.5),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0));
+    opacity: 0;
+}
+.poster-box2 p{
+    padding-top: 512px;
+    -webkit-box-reflect: below 5px linear-gradient(to top,rgba(200,200,200,.2),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0));
+}
+/* 포스터 4 */
+.poster4{
+    width: 350px;height: 500px;
+    background: url(../jpg/환경보호\ 포스터.jpg)no-repeat center;
+    background-size: cover;
+    left: 0;right: 0;margin: auto;
+    margin-right: 100px;
+    text-align: center;
+}
+.poster4-text{
+    position: absolute;
+    left: 0;right: 1400px;margin: auto;
+    top: 520px;
+    width: 10px;height: 30px;
+    background-color: #2a6710;
+    -webkit-box-reflect: below 2px linear-gradient(to top,rgba(200,200,200,.5),rgba(255,255,255,.3),rgba(255,255,255,0.1),rgba(255,255,255,0));
+}
+/* 포스터 5 */
+.poster5{
+    width: 350px;height: 500px;
+    background: url(../jpg/반지\ 포스터.jpg)no-repeat center;
+    background-size: cover;
+    left: 0;right: 0;margin: auto;
+    text-align: center;
+}
+.poster5-text{
+    position: absolute;
+    left: 0;right: 210px;margin: auto;
+    top: 520px;
+    width: 10px;height: 30px;
+    background-color: #1c1c1c;
+    -webkit-box-reflect: below 2px linear-gradient(to top,rgba(200,200,200,.5),rgba(255,255,255,.3),rgba(255,255,255,0.1),rgba(255,255,255,0));
+}
+/* 포스터 6 */
+.poster6{
+    width: 350px;height: 500px;
+    background: url(../jpg/오렌지쥬스\ 광고\ 포스터.jpg)no-repeat center;
+    background-size: cover;
+    left: 0;right: 0;margin: auto;
+    margin-left: 100px;
+    text-align: center;
+}
+.poster6-text{
+    position: absolute;
+    left: 1000px;right: 0;margin: auto;
+    top: 520px;
+    width: 10px;height: 30px;
+    background-color: #f2d830;
+    -webkit-box-reflect: below 2px linear-gradient(to top,rgba(200,200,200,.5),rgba(255,255,255,.3),rgba(255,255,255,0.1),rgba(255,255,255,0));
+}
+/* 캐릭터 페이지 */
+/* 메인 Character 텍스트 박스  */
+.main-box3{
+    position: relative;
+    left: 0;right: 0;margin: auto;
+    top: 150px;
+    width: 100%;height: 1800px;
+    background-color: #f5d237;
+}
+.main-box3-text{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    text-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
+    opacity: 0;
+}
+.main-box3-text-deco{
+    position: absolute;
+    left: 175px;right: 0;margin: auto;
+    top: 95px;
+    width: 8.5px; height: 55px;
+    background-color: rgb(255, 255, 255);
+}
+/* 메인 박스 3 bg */
+.main-box3-bg{
+    position: relative;
+    top: 150px;
+    width: 100%;height: 1800px;
+    background-color: #333;
+    left: 0;right: 0;margin: auto;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 -5px 5px, rgba(0, 0, 0, 0.5) 0 10px 10px;
+}
+/* 캐릭터 박스 설명 글 */
+.main-box3-top-text{
+    position: absolute;
+    left: 0;right: 1080px;margin: auto;
+    top: 50px;
+    width: 500px;height: 300px;
+    color: white;
+    opacity: 0;
+}
+.main-box3-top-text h1{
+    font-size: 40px;
+    -webkit-box-reflect: below 0px linear-gradient(to top,rgba(200,200,200,.5),rgba(255,255,255,.1),rgba(255,255,255,0));
+}
+.main-box3-top-text p{
+    font-weight: 700;
+    opacity: .6;
+    -webkit-box-reflect: below 0px linear-gradient(to top,rgba(200,200,200,.5),rgba(255,255,255,.1),rgba(255,255,255,0));
+    font-size: 20px;
+    color: #888;
+}
+/* photoshop-logo */
+.photoshop-logo2{
+    position: absolute;
+    top: 30px; left: 300px;right: 0;margin: auto;
+    width: 200px;height: 200px;
+    background: url(../jpg/포토샵\ 로고.png)no-repeat center;
+    background-size: cover;
+}
+/* illustrator-logo */
+.illustrator-logo2{
+    position: absolute;
+    top: 100px; left: 260px;right: 0;margin: auto;
+    width: 200px;height: 200px;
+    background: url(../jpg/어도비\ 일러스트.png)no-repeat center;
+    background-size: cover;
+}
+/* 캐릭터 박스 */
+.character-box{
+    position: absolute;
+    left: 500px;right: 0;margin: auto;
+    top: 100px;
+    width: 600px;height: 400px;
+    background: url(../jpg/캐릭터.png)no-repeat center;
+    background-size: cover;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+    opacity: 0;
+}
+/* 캐릭터 목업1 */
+.character-mockup1{
+    position: absolute;
+    left: 0;right: 850px;margin: auto;
+    top: 700px;
+    width: 800px;height: 800px;
+    background: url(../jpg/캐릭터\ 목업1.jpg)no-repeat center;
+    background-size: cover;
+    opacity: 0;
+}
+/* 캐릭터 목업2 */
+.character-mockup2{
+    position: absolute;
+    left: 850px;right: 0;margin: auto;
+    top: 700px;
+    width: 800px;height: 800px;
+    background: url(../jpg/캐릭터\ 목업2.jpg)no-repeat center;
+    background-size: cover;
+    opacity: 0;
+}
+/* 팜플렛 박스 */
+/* 메인 Pamphlet 텍스트 박스  */
+.main-box4{
+    position: relative;
+    left: 0;right: 0;margin: auto;
+    top: 300px;
+    width: 100%;height: 2300px;
+    background-color: #4c57ee;
+}
+.main-box4-text{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    text-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
+    opacity: 0;
+}
+.main-box4-text-deco{
+    position: absolute;
+    left: 0;right: 29.5px;margin: auto;
+    top: 95px;
+    width: 8.5px; height: 55px;
+    background-color: rgb(255, 255, 255);
+}
+/* 메인 박스 4 bg */
+.main-box4-bg{
+    position: relative;
+    top: 150px;
+    width: 100%;height: 2300px;
+    background-color: #bbb;
+    left: 0;right: 0;margin: auto;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 -5px 5px,rgba(0, 0, 0, 0.5)0 10px 10px;
+}
+/* 캐릭터 박스 설명 글 */
+.main-box4-top-text{
+    position: absolute;
+    left: 0;right: 1080px;margin: auto;
+    top: 50px;
+    width: 500px;height: 300px;
+    color: white;
+    opacity: 0;
+}
+.main-box4-top-text h1{
+    font-size: 40px;
+    -webkit-box-reflect: below 0px linear-gradient(to top,rgba(200,200,200,.5),rgba(255,255,255,.1),rgba(255,255,255,0));
+    animation: mb2ttani 1s ease-in-out forwards;
+}
+.main-box4-top-text p{
+    font-weight: 700;
+    opacity: .6;
+    -webkit-box-reflect: below 0px linear-gradient(to top,rgba(200,200,200,.5),rgba(255,255,255,.1),rgba(255,255,255,0));
+    animation: mb2ttani 1s .3s ease-in-out forwards;
+    font-size: 20px;
+    color: #111;
+}
+/* photoshop-logo */
+.photoshop-logo3{
+    position: absolute;
+    top: 30px; left: 300px;right: 0;margin: auto;
+    width: 200px;height: 200px;
+    background: url(../jpg/포토샵\ 로고.png)no-repeat center;
+    background-size: cover;
+}
+/* 팜플렛 목업1 */
+.pamphlet-mockup1{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    top: 400px;
+    width: 1700px;height: 800px;
+    background: url(../jpg/불꽃축제\ 팜플렛\ 목업-2.jpg)no-repeat center;
+    background-size: cover;
+    opacity: 0;
+}
+/* 팜플렛 목업2 */
+.pamphlet-mockup2{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    top: 1250px;
+    width: 1700px;height: 800px;
+    background: url(../jpg/불꽃축제\ 팜플렛\ 목업-1.jpg)no-repeat center;
+    background-size: cover;
+    opacity: 0;
+}
+/* UI박스 */
+/* 메인 UI/UX 텍스트 박스  */
+.main-box5{
+    position: relative;
+    left: 0;right: 0;margin: auto;
+    top: 150px;
+    width: 100%;height: 4000px;
+    background-color: #deb4f1;
+}
+.main-box5-text{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    text-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
+    opacity: 0;
+}
+.main-box5-text-deco{
+    position: absolute;
+    left: 0;right: 66px;margin: auto;
+    top: 95px;
+    width: 8.5px; height: 55px;
+    background-color: rgb(255, 255, 255);
+}
+/* 메인 박스 5 bg */
+.main-box5-bg{
+    position: relative;
+    top: 150px;
+    width: 100%;height: 4000px;
+    background-color: #131313;
+    left: 0;right: 0;margin: auto;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 -5px 5px;
+}
+/*ui 박스 설명 글 */
+.main-box5-top-text{
+    position: absolute;
+    left: 0;right: 1080px;margin: auto;
+    top: 50px;
+    width: 500px;height: 300px;
+    color: white;
+    opacity: 0;
+}
+.main-box5-top-text h1{
+    font-size: 40px;
+    -webkit-box-reflect: below 0px linear-gradient(to top,rgba(200,200,200,.5),rgba(255,255,255,.1),rgba(255,255,255,0));
+    animation: mb2ttani 1s ease-in-out forwards;
+}
+.main-box5-top-text p{
+    font-weight: 700;
+    opacity: .6;
+    -webkit-box-reflect: below 0px linear-gradient(to top,rgba(200,200,200,.5),rgba(255,255,255,.1),rgba(255,255,255,0));
+    animation: mb2ttani 1s .3s ease-in-out forwards;
+    font-size: 20px;
+    color: #ccc;
+}
+/* photoshop-logo */
+.photoshop-logo4{
+    position: absolute;
+    top: 30px; left: 300px;right: 0;margin: auto;
+    width: 200px;height: 200px;
+    background: url(../jpg/포토샵\ 로고.png)no-repeat center;
+    background-size: cover;
+}
+/* pigma-logo */
+.pigma-logo{
+    position: absolute;
+    top: 120px; left: 0;right: 155px;margin: auto;
+    width: 150px;height: 150px;
+    background: url(../jpg/피그마\ 로고.png)no-repeat center;
+    background-size: cover;
+}
+/* ui 박스1 */
+.ui-box1{
+    position: absolute;
+    left: 0;right: 1250px;margin: auto;
+    top: 600px;
+    width: 300px;height: 700px;
+    background: url(../jpg/iPhone\ 14\ Pro\ -\ 1.jpg)no-repeat center;
+    background-size: cover;
+    opacity: 0;
+}
+/* ui 박스1 목업 */
+.ui-box1-mockup1{
+    position: absolute;
+    left: 400px;right: 0;margin: auto;
+    top: 300px;
+    width: 1200px; height: 1000px;
+    background: url(../jpg/음악플레이어UI목업2.jpg)no-repeat center;
+    background-size: cover;
+    opacity: 0;
+}
+/* ui 박스2 */
+.ui-box2{
+    position: absolute;
+    left: 600px;right: 0;margin: auto;
+    top: 1500px;
+    width: 300px;height: 1100px;
+    background: url(../jpg/iPhone\ 14\ Pro\ -\ 2.jpg)no-repeat center;
+    background-size: cover;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+    opacity: 0;
+}
+.ui-box2-2{
+    position: absolute;
+    left: 1300px;right: 0;margin: auto;
+    top: 1500px;
+    width: 300px;height: 1100px;
+    background: url(../jpg/iPhone\ 14\ Pro\ -\ 3.jpg)no-repeat center;
+    background-size: cover;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+    opacity: 0;
+}
+/* ui 박스1 목업 */
+.ui-box2-mockup1{
+    position: absolute;
+    left: 0;right: 550px;margin: auto;
+    top: 1400px;
+    width: 1000px; height: 1100px;
+    background: url(../jpg/음악플레이어UI목업.jpg)no-repeat center;
+    background-size: cover;
+    opacity: 0;
+}
+/* 메타버스 앱 */
+.meta-box1{
+    position: absolute;
+    left: 0;right: 1250px;margin: auto;
+    top: 2800px;
+    width: 300px;height: 700px;
+    background: url(../jpg/iPhone\ 14\ 1.jpg)no-repeat center;
+    background-size: cover;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.5)0 0 10px 5px;
+    transition: all .3s;
+    opacity: 0;
+}
+.meta-box1:hover{
+    z-index: 2;
+    transform: translateY(-50px);
+    transition: all .3s;
+}
+.meta-box2{
+    position: absolute;
+    left: 0;right: 850px;margin: auto;
+    top: 2900px;
+    width: 300px;height: 700px;
+    background: url(../jpg/iPhone\ 14\ 2.jpg)no-repeat center;
+    background-size: cover;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.5)0 0 10px 5px;
+    transition: all .3s;
+    opacity: 0;
+}
+.meta-box2:hover{
+    z-index: 2;
+    transform: translateY(-50px);
+    transition: all .3s;
+}
+.meta-box3{
+    position: absolute;
+    left: 0;right: 450px;margin: auto;
+    top: 3000px;
+    width: 300px;height: 700px;
+    background: url(../jpg/iPhone\ 14\ 3.jpg)no-repeat center;
+    background-size: cover;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.5)0 0 10px 5px;
+    transition: all .3s;
+    opacity: 0;
+}
+.meta-box3:hover{
+    z-index: 2;
+    transform: translateY(-50px);
+    transition: all .3s;
+}
+.meta-mockup{
+    position: absolute;
+    left: 700px;right: 0;margin: auto;
+    top: 2800px;
+    width: 1000px;height: 900px;
+    background: url(../jpg/어플ui\ 목업.jpg)no-repeat center;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.5)0 0 10px 5px;
+    opacity: 0;
+}
+/* 피그마 링크 */
+.pigma-link{
+    position: absolute;
+    width: 220px;height: 85px;
+    border: white 5px solid;
+    left: 0;right: 0;margin: auto;
+    text-align: center;
+    top: 3800px;
+    color: white;
+    opacity: 0;
+}
+.pigma-link:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* 기타 작품 박스 */
+/* 메인박스 6 */
+/* 메인 기타 텍스트 박스  */
+.main-box6{
+    position: relative;
+    left: 0;right: 0;margin: auto;
+    top: 150px;
+    width: 100%;height: 4000px;
+    background-color: #333;
+}
+.main-box6-text{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    text-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
+    opacity: 0;
+}
+.main-box6-text-deco{
+    position: absolute;
+    left: 0;right: 4px;margin: auto;
+    top: 95px;
+    width: 8.5px; height: 55px;
+    background-color: rgb(255, 255, 255);
+}
+.main-box6-bg{
+    position: relative;
+    top: 150px;
+    width: 100%;height: 4000px;
+    background-color: #e9e9e9;
+    left: 0;right: 0;margin: auto;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 -5px 5px;
+}
+/*기타 박스 설명 글 */
+.main-box6-top-text{
+    position: absolute;
+    left: 0;right: 1080px;margin: auto;
+    top: 50px;
+    width: 600px;height: 300px;
+    color: #070707;
+    opacity: 0;
+}
+.main-box6-top-text h1{
+    font-size: 40px;
+    -webkit-box-reflect: below 0px linear-gradient(to top,rgba(200,200,200,.5),rgba(255,255,255,.1),rgba(255,255,255,0));
+    animation: mb2ttani 1s ease-in-out forwards;
+}
+.main-box6-top-text p{
+    font-weight: 700;
+    opacity: .6;
+    -webkit-box-reflect: below 0px linear-gradient(to top,rgba(200,200,200,.5),rgba(255,255,255,.1),rgba(255,255,255,0));
+    animation: mb2ttani 1s .3s ease-in-out forwards;
+    font-size: 20px;
+    color: #888;
+}
+/* photoshop-logo */
+.photoshop-logo5{
+    position: absolute;
+    top: 30px; left: 300px;right: 0;margin: auto;
+    width: 200px;height: 200px;
+    background: url(../jpg/포토샵\ 로고.png)no-repeat center;
+    background-size: cover;
+}
+/* 3dmax-logo */
+.dmax-logo{
+    position: absolute;
+    top: 150px; left: 0;right: 80px;margin: auto;
+    width: 70px;height: 70px;
+    background: url(../jpg/3d\ max\ logo.png)no-repeat center;
+    background-size: cover;
+}
+/* img-box1 */
+.img-box1{
+    position: absolute;
+    display: flex;
+    left: 0;right: 0;margin: auto;
+    top: 450px;
+    width: 100%;height: 800px;
+    background-color: #ccc;
+    box-shadow: inset rgba(0, 0, 0, 0.5)0 10px 10px,inset rgba(0, 0, 0, 0.5)0 -5px 5px;
+    opacity: 0;
+}
+/* 그림s */
+.img1{
+    width: 500px;height: 700px;
+    background: url(../jpg/2021-09-30아이유\(2\).jpg)no-repeat center;
+    background-size: cover;
+    left: 0;right: 0;margin: auto;
+    margin-right: 50px;
+    box-shadow: rgba(0, 0, 0, 0.5)0 0 10px 5px;
+    opacity: 0;
+}
+.img2{
+    width: 500px;height: 700px;
+    background: url(../jpg/츄2\(4\).jpg)no-repeat center;
+    background-size: cover;
+    left: 0;right: 0;margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.5)0 0 10px 5px;
+    opacity: 0;
+}
+.img3{
+    width: 500px;height: 700px;
+    background: url(../jpg/에일리언\(4\).jpg)no-repeat center;
+    background-size: cover;
+    left: 0;right: 0;margin: auto;
+    margin-left: 50px;
+    box-shadow: rgba(0, 0, 0, 0.5)0 0 10px 5px;
+    opacity: 0;
+}
+/* img-box2 */
+.img-box2{
+    position: absolute;
+    display: flex;
+    left: 0;right: 0;margin: auto;
+    top: 1300px;
+    width: 100%;height: 800px;
+    background-color: #ccc;
+    box-shadow: inset rgba(0, 0, 0, 0.5)0 10px 10px,inset rgba(0, 0, 0, 0.5)0 -5px 5px;
+    opacity: 0;
+}
+/* 그림s */
+.img4{
+    width: 800px;height: 495px;
+    background: url(../jpg/2021-05-10\ 아이언맨\(모작\)\(완\).jpg)no-repeat center;
+    background-size: cover;
+    left: 0;right: 0;margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.5)0 0 10px 5px;
+    opacity: 0;
+}
+.img5{
+    width: 800px;height: 495px;
+    background: url(../jpg/2021-11-13타노스.jpg)no-repeat center;
+    background-size: cover;
+    left: 0;right: 0;margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.5)0 0 10px 5px;
+    opacity: 0;
+}
+/* img-box3 */
+.img-box3{
+    position: absolute;
+    display: flex;
+    left: 0;right: 0;margin: auto;
+    top: 2150px;
+    width: 100%;height: 800px;
+    background-color: #ccc;
+    box-shadow: inset rgba(0, 0, 0, 0.5)0 10px 10px,inset rgba(0, 0, 0, 0.5)0 -5px 5px;
+    opacity: 0;
+}
+/* 그림s */
+.img6{
+    width: 800px;height: 495px;
+    background: url(../jpg/깐부.jpg)no-repeat center;
+    background-size: cover;
+    left: 0;right: 0;margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.5)0 0 10px 5px;
+    opacity: 0;
+}
+.img7{
+    width: 500px;height: 700px;
+    background: url(../jpg/2022-06-13~트랜스포머\(4\).jpg)no-repeat center;
+    background-size: cover;
+    left: 0;right: 0;margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.5)0 0 10px 5px;
+    opacity: 0;
+}
+/* max-box */
+.max-box{
+    position: absolute;
+    display: flex;
+    left: 0;right: 0;margin: auto;
+    top: 3000px;
+    width: 100%;height: 800px;
+    opacity: 0;
+}
+/* max-logo */
+.max-logo{
+    position: absolute;
+    left: 0;right: 0;margin: auto;
+    top: 50px;
+    width: 150px;height: 150px;
+    background: url(../jpg/3d\ max\ logo.png)no-repeat center;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.5)0 0 10px;
+}
+/* 그림s */
+.max-img{
+    position: absolute;
+    width: 600px;height: 400px;
+    top: 300px;
+    background: url(../jpg/3D\ 캐릭터\ 모델링\(1\)_이민기.jpg)no-repeat center;
+    background-size: cover;
+    left: 0;right: 0;margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.5)0 0 10px 5px;
+}
+/* 끝마무리 푸터 박스 */
+.footer-box{
+    position: relative;
+    top: 150px;
+    background-color: #333;
+    width: 100%; height: 400px;
+}
+.footer-img{
+    position: absolute;
+    margin-top: 40px; margin-left: 50px;
+    background: url(../jpg/증명사진.jpg) no-repeat center;
+    background-size: 500px;
+    width: 200px; height: 270px;
+    box-shadow: rgba(0, 0, 0,0.7) 0 0 10px;
+}
+
+.footer-text{
+    position: absolute;
+    top: 50%; left: 18%;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.thenkYou{
+    position: absolute;
+    text-align: center;
+    top: 20%; left: 25%;
+    font-size: 25px;
+    line-height: 1.5;
+    color: white;
+    
+}
+.thenkYou h1{
+    padding: 0; margin: 0;
+    -webkit-box-reflect: below -10px linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0),rgba(0,0,0,.1), rgba(0,0,0,0.2));
+}
+.a-box{
+    position: absolute;
+    left: 1700px;right: 0;margin: auto;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-bottom: white 2px solid;
+    width: 200px;
+}
+.a-box:hover{
+    color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
