@@ -63,7 +63,7 @@ if (value > 1200){
 if (value > 1500){
     mainbox2text.style.animation = "opacityani 1s linear forwards";
 }
-if (value > 1800){
+if (value > 1600){
     posterbox1.style.animation = "upani 1s ease-in-out forwards";
 }
 if (value > 2200){
@@ -76,7 +76,7 @@ if (value >3900){
     mainbox3text.style.animation = "opacityani 1s linear forwards";
     characterbox1.style.animation = "upani 1s ease-in-out forwards";
 }
-if (value > 4600){
+if (value > 4400){
     characterbox2.style.animation = "leftslideani 1s ease-in-out forwards";
     characterbox3.style.animation = "rightslideani 1s ease-in-out forwards";
 }
@@ -86,28 +86,28 @@ if (value > 5600){
 if (value > 5800){
     mainbox4text.style.animation = "opacityani 1s linear forwards";
 }
-if (value > 6400){
+if (value > 6200){
     pamphletbox.style.animation = "upani 1s ease-in-out forwards";
 }
-if (value > 7100){
+if (value > 6900){
     pamphletbox2.style.animation = "upani 1s ease-in-out forwards";
 }
-if (value > 8100){
+if (value > 7900){
     toptext4.style.animation = "upani 1s ease-in-out forwards";
 }
-if (value > 8400){
+if (value > 8100){
     mainbox5text.style.animation = "opacityani 1s linear forwards";
 }
-if (value > 8700){
+if (value > 8300){
     uibox1.style.animation = "upani 1s ease-in-out forwards";
     uibox2.style.animation = "rightslideani 1s ease-in-out forwards";
 }
-if (value > 9900){
+if (value > 9400){
     uibox3.style.animation = "upani 1s ease-in-out forwards";
     uibox4.style.animation = "upani 1s ease-in-out forwards";
     uibox5.style.animation = "leftslideani 1s ease-in-out forwards";
 }
-if (value > 11100){
+if (value > 10600){
     uibox6.style.animation = "upani 1s ease-in-out forwards";
     uibox7.style.animation = "upani 1s ease-in-out forwards";
     uibox8.style.animation = "upani 1s ease-in-out forwards";
@@ -128,12 +128,12 @@ if (value > 12800){
     img1_2.style.animation = "leftslideani 1s .2s ease-in-out forwards";
     img1_3.style.animation = "leftslideani 1s .4s ease-in-out forwards";
 }
-if (value > 13800){
+if (value > 13400){
     img2.style.animation = "opacityani 1s ease-in-out forwards";
     img2_1.style.animation = "leftslideani 1s ease-in-out forwards";
     img2_2.style.animation = "leftslideani 1s .2s ease-in-out forwards";
 }
-if (value > 14600){
+if (value > 14300){
     img3.style.animation = "opacityani 1s ease-in-out forwards";
     img3_1.style.animation = "leftslideani 1s ease-in-out forwards";
     img3_2.style.animation = "leftslideani 1s .2s ease-in-out forwards";
