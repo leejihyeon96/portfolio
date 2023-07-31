@@ -1,17 +1,19 @@
 body{
     padding: 0.1px;
     margin: 0;
+    height: 100%;
 }
 div{
     box-sizing: border-box;
 }
 html{
     line-height: 1.15;
+    height: 100%;
 }
 
 .main_box{
     position: relative;
-    width: 100%; height: 100vh;
+    width: 100%;height: 100%;
     background-color: rgb(255, 255, 255);
     overflow: hidden;
     left: 0;right: 0;margin: auto;
@@ -283,7 +285,7 @@ html{
     }
 }
 /* 이름 뒤에 나오는 글 'index'텍스트 애니메이션 */
-.index_text{
+.portfolio_text{
     position: absolute;
     text-align: center;
     top: 0;bottom: 0;left: 0;right: 0;margin: auto;
@@ -325,7 +327,7 @@ html{
     overflow: hidden;
 }
 .startani2{
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(60, 60, 60);
     position: absolute;
     width: 100px; height: 100px;
     border-radius: 50%;
@@ -333,13 +335,13 @@ html{
     top: 0;bottom: 0;left: 0;right: 20px;margin: auto;
     display: none;
     opacity: 0;
-    animation: leftani3 3s .5s ease-in-out forwards;
+    animation: leftani3 3s .7s ease-in-out forwards;
     overflow: hidden;
 }
 @keyframes leftani2 {
     0%{
         background-color: white;
-        transform: translateX(0px)
+        transform: translateY(0px)
         scale(0);
         opacity: 0;
         width: 100px;height: 100px;
@@ -347,172 +349,167 @@ html{
 
     50%{
         background-color: white;
-        transform: translateX(0)
+        transform: translateY(0)
         scale(100%);
         opacity: 1;
     }
     70%{
         background-color: white;
-        transform: translateX(1000px)
-        scaleX(300%);
+        transform: translateY(-500px)
+        scaleX(100%);
         width: 100px;height: 100px;
         border-radius: 50%;
     }
     100%{
         background-color: #000;
         transition: step-end;
-        transform: translateX(1000px);
-        width: 60%;height: 100%;
+        transform: translateY(-400px);
+        width: 100%;height: 200px;
         border-radius: 0%;
+        box-shadow: #fff 0px 1px 0px 0px;
         opacity: 1;
     }
 }
 @keyframes leftani3 {
     0%{
-        transform: translateX(0px)
+        transform: translateY(0px)
         scale(0);
         opacity: 0;
         width: 100px;height: 100px;
     }
 
     50%{
-        transform: translateX(0)
+        transform: translateY(0)
         scale(100%);
         opacity: 1;
     }
     70%{
-        transform: translateX(1000px)
-        scaleX(300%);
+        transform: translateY(-480px)
+        scaleY(300%);
         width: 100px;height: 100px;
         border-radius: 50%;
     }
     100%{
         transition: step-end;
-        transform: translateX(1000px);
-        width: 60%;height: 100%;
+        transform: translateY(-390px);
+        width: 100%;height: 200px;
         border-radius: 0%;
         opacity: 1;
     }
 }
 /* 비디오1 */
 .page1{
-    width: 100%;height: 1000px;
+    width: 100vw;height: 100vh;
     position: absolute;
     left: 0;right: 0;margin: auto;
     background: url(./jpg/소개_및_작품.jpg)no-repeat center;
-    background-size: cover;
-    transform: translateX(-200px);
+    background-size: 100%;
     opacity: .5;
     display: none;
 }
 /* 비디오2 */
 .page2{
-    width: 100%;height: 1000px;
+    width: 100vw;height: 100vh;
     position: absolute;
-    left: -130px;right: 0;margin: auto;
+    left: 0px;right: 0;margin: auto;
     background: url(./jpg/Crimson\ Desert_Screen.png)no-repeat center;
-    background-size: cover;
-    transform: translateX(-200px);
+    background-size: 100%;
     opacity: .5;
     display: none;
 }
 /* 비디오3 */
 .page3{
-    width: 100%;height: 1000px;
+    width: 100vw;height: 100vh;
     position: absolute;
-    left: -130px;right: 0;margin: auto;
+    left: 0px;right: 0;margin: auto;
     background: url(./jpg/DEADSPACE_Screen.png)no-repeat center;
-    background-size: cover;
-    transform: translateX(-200px);
+    background-size: 100%;
     opacity: .5;
     display: none;
 }
 /* 목차 */
 .index{
+    position: relative;
     list-style: none;
-    text-align: left;
-    margin: 50px;
-    display: none;
+    text-align: center;
+    display: flex;
+    margin-top: 100px;
+    justify-content: baseline;
 }
 
 .index li h3{
-    padding-top: 50px; padding-bottom: 50px;
-    padding-left: 100px;
-    left: 0;right: 0;margin: auto;
-    color: white;
+    margin: 0;
 }
 
 /* 목차 첫번째 */
 .page1_text{
-    position: relative;
-    font-size: 15px;
+    font-size: 12px;
     cursor: pointer;
-    width: 100%;height: 200px;
-    border-radius: 20%;
-    overflow: hidden;
+    width: 30%;height: 50px;
+    margin-left: 5px;
     text-align: center;
     transition: all .5s;
-    left: -300px;
-    margin-top: 250px;
-    background: url(./jpg/con1.png)no-repeat center;
-    background-size: 300px;
+    float: left;
+    border: 2px white solid;
+    border-radius: 10px;
 }
 /* 목차 두번쨰 */
 .page2_text{
-    position: relative;
-    font-size: 15px;
+    font-size: 12px;
     cursor: pointer;
-    width: 100%;height: 200px;
-    border-radius: 20%;
-    overflow: hidden;
+    width: 30%;height: 50px;
+    margin-left: 5px;
     text-align: center;
     transition: all .5s;
-    left: -300px;
-    background: url(./jpg/con1.png)no-repeat center;
-    background-size: 300px;
+    float: left;
+    border: 2px white solid;
+    border-radius: 10px;
+    
 }
 
 /* 목차 세번째 */
 .page3_text{
-    position: relative;
-    font-size: 15px;
+    font-size: 12px;
     cursor: pointer;
-    width: 100%;height: 200px;
-    border-radius: 20%;
-    overflow: hidden;
+    width: 30%;height: 50px;
+    margin-left: 5px;
     text-align: center;
     transition: all .5s;
-    left: -300px;
-    background: url(./jpg/con1.png)no-repeat center;
-    background-size: 300px;
-
+    float: left;
+    border: 2px white solid;
+    border-radius: 10px;
 }
 
 /* 링크 텍스쳐 호버 설정 */
 .page_text_hover{
-    transform: translateX(-197px);
+    transform: translateY(10px);
     transition: all .5s;
-    background: url(./jpg/con2.png)no-repeat center;
-    background-size: 300px;
 }
 .page_text_hover_off{
-    transform: translateX(0px);
+    transform: translateY(0px);
     transition: all .5s;
-    background: url(./jpg/con1.png)no-repeat center;
-    background-size: 300px;
 }
 /* a 링크 글짜 색상,호버 */
 .page1_text a{
     color: #777;
     transition: all 1s;
+    width: 100%;height: 50px;
+    transform: translateY(-20px);
+    display: block;
 }
 .page2_text a{
     color: #777;
     transition: all 1s;
+    width: 100%;height: 50px;
+    transform: translateY(-20px);
+    display: block;
 }
 .page3_text a{
     color: #777;
     transition: all 1s;
+    width: 100%;height: 50px;
+    transform: translateY(-20px);
+    display: block;
 }
 /* a 태그 호버 설정 */
 .page1_text a:hover{
@@ -529,15 +526,17 @@ html{
 }
 /* 데코click박스 설정 */
 .click_box{
-    position: absolute;
     color: white;
-    width: 200px;
-    left: 670px;top: 70px;
+    width: 100%;
+    text-align: center;
     font-weight: 600;
     font-size: 20px;
     text-shadow: white 0 0 20px;
     z-index: -1;
+    transition: all .3s;
+    transform: translateY(-22px);
 }
+
 /* 목차 원 데코 */
 .deco1{
     position: absolute;
@@ -671,54 +670,6 @@ html{
     }
     100%{
         opacity: 1;
-    }
-}
-/* 콘센트 옆 빛나는 애니메이션 */
-.page1_deco2{
-    position: absolute;
-    width: 50px;height: 50px;
-    left: 860px;right: 0;margin: auto;
-    top: 410px;
-    border-radius: 50%;
-    background-color: rgb(255, 255, 255);
-    box-shadow: white 0 0 30px 20px;
-    backdrop-filter: blur(10px);
-    animation: 빛 1s linear forwards;
-    display: none;
-}
-.page2_deco2{
-    position: absolute;
-    width: 50px;height: 50px;
-    left: 860px;right: 0;margin: auto;
-    top: 610px;
-    border-radius: 50%;
-    background-color: rgb(255, 255, 255);
-    box-shadow: white 0 0 30px 20px;
-    backdrop-filter: blur(10px);
-    animation: 빛 1s linear forwards;
-    display: none;
-}
-.page3_deco2{
-    position: absolute;
-    width: 50px;height: 50px;
-    left: 860px;right: 0;margin: auto;
-    top: 810px;
-    border-radius: 50%;
-    background-color: rgb(255, 255, 255);
-    box-shadow: white 0 0 30px 20px;
-    backdrop-filter: blur(10px);
-    animation: 빛 1s linear forwards;
-    display: none;
-}
-@keyframes 빛 {
-    0%{
-        opacity: 0;
-    }
-    40%{
-        opacity: 0;
-    }
-    100%{
-        opacity: .5;
     }
 }
 /* 전원off버튼 */

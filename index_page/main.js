@@ -25,10 +25,6 @@ $('.page1_text').mouseover(function(){
     $('.page1_deco_text').css('display','block')
     $('.page2_deco_text').css('display','none')
     $('.page3_deco_text').css('display','none')
-    // 콘센트 옆 빛나는 애니메이션
-    $('.page1_deco2').css('display','block')
-    $('.page2_deco2').css('display','none')
-    $('.page3_deco2').css('display','none')
 });
 $('.page2_text').mouseover(function(){
         // ul li 콘센트 애니메이션
@@ -47,10 +43,6 @@ $('.page2_text').mouseover(function(){
     $('.page1_deco_text').css('display','none')
     $('.page3_deco_text').css('display','none')
     $('.page2_deco_text').css('display','block')
-        // 콘센트 옆 빛나는 애니메이션
-    $('.page1_deco2').css('display','none')
-    $('.page2_deco2').css('display','block')
-    $('.page3_deco2').css('display','none')
 });
 $('.page3_text').mouseover(function(){
             // ul li 콘센트 애니메이션
@@ -69,10 +61,6 @@ $('.page3_text').mouseover(function(){
     $('.page3_deco_text').css('display','block')
     $('.page1_deco_text').css('display','none')
     $('.page2_deco_text').css('display','none')
-        // 콘센트 옆 빛나는 애니메이션
-    $('.page1_deco2').css('display','none')
-    $('.page2_deco2').css('display','none')
-    $('.page3_deco2').css('display','block')
 });
 // 전원 off 버튼
 setTimeout(function(){
@@ -95,10 +83,6 @@ $('.power_off').on('click',function(){
     $('.page1_deco_text').css('display','none')
     $('.page2_deco_text').css('display','none')
     $('.page3_deco_text').css('display','none')
-                    // 콘센트 옆 빛나는 애니메이션
-    $('.page1_deco2').css('display','none')
-    $('.page2_deco2').css('display','none')
-    $('.page3_deco2').css('display','none')
 });
 // 전원 버튼 애니메이션
 let indexani = document.querySelector('.index');
